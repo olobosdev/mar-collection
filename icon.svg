@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="0" fill="#c8102e"/>
+  <rect x="150" y="96" width="212" height="296" rx="22" fill="#ffffff" opacity=".18" transform="rotate(-8 256 244)"/>
+  <rect x="150" y="104" width="212" height="296" rx="22" fill="#ffffff"/>
+  <text x="256" y="270" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="68" fill="#c8102e">MAR</text>
+  <path d="M206 330 l34 32 l68 -78" fill="none" stroke="#1f8a4c" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

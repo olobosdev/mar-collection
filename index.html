@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Colección MAR</title>
+<meta name="description" content="Seguimiento de la colección Marvel Universe (MAR) de Magic: The Gathering">
+<meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161b" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MAR">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --surface: #ffffff;
+    --surface-2: #ebe7dd;
+    --text: #1c1d21;
+    --muted: #6b6a66;
+    --line: #d9d4c7;
+    --accent: #c8102e;      /* rojo Marvel */
+    --accent-ink: #ffffff;
+    --owned: #1f8a4c;
+    --owned-soft: #d9f0e2;
+    --warn: #a15c00;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.06);
+    --radius: 14px;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161b;
+      --surface: #1d2027;
+      --surface-2: #262a33;
+      --text: #ecebe7;
+      --muted: #9a9ca3;
+      --line: #313641;
+      --accent: #ff4d5e;
+      --accent-ink: #1a0a0c;
+      --owned: #3ccf7a;
+      --owned-soft: #173a27;
+      --warn: #f0b04a;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161b; --surface: #1d2027; --surface-2: #262a33; --text: #ecebe7;
+    --muted: #9a9ca3; --line: #313641; --accent: #ff4d5e; --accent-ink: #1a0a0c;
+    --owned: #3ccf7a; --owned-soft: #173a27; --warn: #f0b04a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  button, input, select { font: inherit; color: inherit; }
+  a { color: inherit; }
+
+  /* ---------- Cabecera ---------- */
+  header {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: calc(env(safe-area-inset-top) + 10px) 16px 10px;
+  }
+  .top { display: flex; align-items: center; gap: 10px; max-width: 1200px; margin: 0 auto; }
+  .brand { display: flex; align-items: baseline; gap: 8px; flex: 1; min-width: 0; }
+  .brand h1 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
+  .brand .code {
+    font: 700 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--accent); color: var(--accent-ink);
+    padding: 4px 6px; border-radius: 6px; letter-spacing: .06em;
+  }
+  .icon-btn {
+    border: 1px solid var(--line); background: var(--surface);
+    border-radius: 10px; height: 36px; min-width: 36px; padding: 0 10px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    cursor: pointer;
+  }
+  .sync-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  .sync-dot.ok { background: var(--owned); }
+  .sync-dot.busy { background: var(--warn); }
+  .sync-dot.err { background: var(--accent); }
+
+  .progress-wrap { max-width: 1200px; margin: 10px auto 0; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 5px; }
+  .progress-label strong { color: var(--text); font-variant-numeric: tabular-nums; }
+  .bar { height: 8px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+  .bar > div { height: 100%; width: 0; background: var(--owned); border-radius: 99px; transition: width .3s ease; }
+
+  /* ---------- Resumen ---------- */
+  main { max-width: 1232px; margin: 0 auto; padding: 14px 16px 40px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; box-shadow: var(--shadow); min-width: 0; }
+  .stat .k { font-size: 12px; color: var(--muted); }
+  .stat .v { font-size: 18px; font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat.owned .v { color: var(--owned); }
+
+  /* ---------- Controles ---------- */
+  .controls { display: grid; gap: 8px; margin-bottom: 14px; }
+  .search {
+    width: 100%; height: 42px; border-radius: 12px; border: 1px solid var(--line);
+    background: var(--surface); padding: 0 14px; font-size: 16px; /* 16px evita el zoom en iOS */
+  }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .seg { display: inline-flex; background: var(--surface-2); border-radius: 10px; padding: 3px; gap: 2px; }
+  .seg button {
+    border: 0; background: transparent; border-radius: 8px; padding: 6px 10px; font-size: 13px; cursor: pointer; color: var(--muted);
+  }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); font-weight: 600; }
+  .colors { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .pip {
+    width: 30px; height: 30px; border-radius: 50%; border: 2px solid transparent; cursor: pointer;
+    font: 700 12px/1 ui-monospace, Menlo, monospace; display: inline-flex; align-items: center; justify-content: center;
+    opacity: .45;
+  }
+  .pip[aria-pressed="true"] { opacity: 1; border-color: var(--text); }
+  .pip[data-c="W"] { background: #f8f2d8; color: #6b5d2a; }
+  .pip[data-c="U"] { background: #a9d4ef; color: #1a4a6b; }
+  .pip[data-c="B"] { background: #4a4446; color: #e6dfe0; }
+  .pip[data-c="R"] { background: #f2a586; color: #7a2410; }
+  .pip[data-c="G"] { background: #9fd1a9; color: #1d5a2c; }
+  .pip[data-c="C"] { background: #cfcac2; color: #4a463f; }
+  .pip[data-c="M"] { background: linear-gradient(135deg,#f2d36b,#e98a6a,#7fb6e0,#8fd19e); color: #2b2b2b; }
+  select.sort { height: 34px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); padding: 0 8px; font-size: 14px; }
+  .count { font-size: 13px; color: var(--muted); margin-left: auto; }
+
+  /* ---------- Grilla ---------- */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+  @media (max-width: 380px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column;
+    transition: border-color .15s ease;
+  }
+  .card.is-owned { border-color: var(--owned); }
+  .thumb { position: relative; aspect-ratio: 488 / 680; background: var(--surface-2); cursor: zoom-in; border: 0; padding: 0; display: block; width: 100%; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4.5% / 3.3%; }
+  .card:not(.is-owned) .thumb img { filter: grayscale(.85) contrast(.9); opacity: .75; }
+  .num {
+    position: absolute; top: 6px; left: 6px; font: 700 11px/1 ui-monospace, Menlo, monospace;
+    background: rgba(0,0,0,.72); color: #fff; padding: 4px 6px; border-radius: 6px;
+  }
+  .body { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .name { font-weight: 620; font-size: 14px; line-height: 1.25; margin: 0; }
+  .meta { font-size: 12px; color: var(--muted); }
+  .price { font-variant-numeric: tabular-nums; font-weight: 650; }
+  .price .src { font-size: 10px; font-weight: 600; color: var(--muted); margin-left: 3px; }
+  .price.fallback { color: var(--warn); }
+  .links { display: flex; gap: 4px; flex-wrap: wrap; }
+  .links a { font-size: 11px; white-space: nowrap; text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px; color: var(--muted); }
+  .toggle {
+    margin-top: auto; height: 38px; border-radius: 10px; border: 1px solid var(--line);
+    background: var(--surface-2); cursor: pointer; font-weight: 600; font-size: 14px;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .toggle[aria-pressed="true"] { background: var(--owned-soft); border-color: var(--owned); color: var(--owned); }
+  .section + .section { margin-top: 28px; }
+  .section-head {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    margin: 0 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--line);
+  }
+  .section-head h2 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
+  .section-head .range { font: 700 11px/1 ui-monospace, Menlo, monospace; color: var(--muted); background: var(--surface-2); padding: 4px 6px; border-radius: 6px; }
+  .section-head .sec-stats { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .section-head .sec-stats strong { color: var(--text); }
+  .sec-bar { height: 4px; background: var(--surface-2); border-radius: 99px; overflow: hidden; margin: -6px 0 12px; }
+  .sec-bar > div { height: 100%; background: var(--owned); border-radius: 99px; transition: width .3s ease; }
+  .empty { text-align: center; color: var(--muted); padding: 50px 10px; grid-column: 1 / -1; }
+  .notice { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--warn); padding: 10px 12px; border-radius: 10px; font-size: 13px; margin-bottom: 12px; }
+
+  /* ---------- Diálogos ---------- */
+  dialog {
+    border: 0; padding: 0; border-radius: 18px; background: var(--surface); color: var(--text);
+    width: min(520px, calc(100vw - 32px)); max-height: calc(100vh - 40px); box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  }
+  dialog::backdrop { background: rgba(0,0,0,.55); }
+  .dlg { padding: 18px; display: grid; gap: 12px; }
+  .dlg h2 { margin: 0; font-size: 18px; }
+  .dlg p { margin: 0; font-size: 14px; color: var(--muted); }
+  .dlg label { font-size: 13px; font-weight: 600; display: grid; gap: 4px; }
+  .dlg input[type=password], .dlg input[type=text] { height: 40px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); padding: 0 10px; font-size: 16px; }
+  .dlg .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn { height: 38px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); padding: 0 14px; cursor: pointer; font-weight: 600; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn.danger { color: var(--accent); }
+  .hr { height: 1px; background: var(--line); }
+  .small { font-size: 12px; color: var(--muted); }
+  #zoom { width: min(420px, calc(100vw - 32px)); background: transparent; box-shadow: none; }
+  #zoom img { width: 100%; display: block; border-radius: 4.5% / 3.3%; }
+  .toast {
+    position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 18px); transform: translateX(-50%) translateY(20px);
+    background: var(--text); color: var(--bg); padding: 10px 14px; border-radius: 10px; font-size: 14px;
+    opacity: 0; pointer-events: none; transition: all .2s ease; z-index: 50; max-width: calc(100vw - 32px);
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand"><h1>Marvel Universe</h1><span class="code">MAR</span></div>
+    <button class="icon-btn" id="syncBtn" title="Sincronización y respaldo">
+      <span class="sync-dot" id="syncDot"></span><span id="syncLabel">Nube</span>
+    </button>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>Progreso</span><strong id="progressText">0 / 0</strong></div>
+    <div class="bar"><div id="progressBar"></div></div>
+  </div>
+</header>
+
+<main>
+  <div id="notice"></div>
+
+  <section class="stats" aria-label="Resumen de valor">
+    <div class="stat owned"><div class="k">Tengo</div><div class="v" id="valOwned">–</div></div>
+    <div class="stat"><div class="k">Me faltan</div><div class="v" id="valMissing">–</div></div>
+    <div class="stat"><div class="k">Set completo</div><div class="v" id="valTotal">–</div></div>
+  </section>
+
+  <section class="controls" aria-label="Filtros">
+    <input class="search" id="search" type="search" placeholder="Buscar por nombre o número…" autocomplete="off">
+    <div class="row">
+      <div class="seg" id="fOwned">
+        <button data-v="all" aria-pressed="true">Todas</button>
+        <button data-v="owned" aria-pressed="false">Tengo</button>
+        <button data-v="missing" aria-pressed="false">Faltan</button>
+      </div>
+      <div class="seg" id="fOrigin">
+        <button data-v="all" aria-pressed="true">Ambas</button>
+        <button data-v="spm" aria-pressed="false">Spider-Man</button>
+        <button data-v="msh" aria-pressed="false">Super Heroes</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="colors" id="fColors">
+        <button class="pip" data-c="W" aria-pressed="false" title="Blanco">W</button>
+        <button class="pip" data-c="U" aria-pressed="false" title="Azul">U</button>
+        <button class="pip" data-c="B" aria-pressed="false" title="Negro">B</button>
+        <button class="pip" data-c="R" aria-pressed="false" title="Rojo">R</button>
+        <button class="pip" data-c="G" aria-pressed="false" title="Verde">G</button>
+        <button class="pip" data-c="C" aria-pressed="false" title="Incolora">C</button>
+        <button class="pip" data-c="M" aria-pressed="false" title="Multicolor">M</button>
+      </div>
+      <select class="sort" id="sort" aria-label="Ordenar">
+        <option value="num">Número</option>
+        <option value="name">Nombre</option>
+        <option value="price-desc">Precio ↓</option>
+        <option value="price-asc">Precio ↑</option>
+      </select>
+      <span class="count" id="count"></span>
+    </div>
+  </section>
+
+  <div id="grid" aria-live="polite">
+    <div class="empty">Cargando cartas…</div>
+  </div>
+</main>
+
+<!-- Diálogo de sincronización -->
+<dialog id="syncDlg">
+  <form method="dialog" class="dlg" id="syncForm">
+    <h2>Nube y respaldo</h2>
+    <p>Tu colección siempre se guarda en este dispositivo. Para sincronizarla entre dispositivos se guarda en un Gist privado de tu cuenta de GitHub.</p>
+    <label><span>Token de GitHub (permiso <code>gist</code>)</span>
+      <input type="password" id="tokenInput" autocomplete="off" placeholder="ghp_…">
+    </label>
+    <label><span>ID del Gist (opcional, se detecta o se crea solo)</span>
+      <input type="text" id="gistInput" autocomplete="off" placeholder="se completa automáticamente">
+    </label>
+    <p class="small" id="syncInfo"></p>
+    <div class="actions">
+      <button class="btn primary" type="button" id="saveSync">Guardar y sincronizar</button>
+      <button class="btn" type="button" id="syncNow">Sincronizar ahora</button>
+      <button class="btn danger" type="button" id="unlink">Desvincular</button>
+    </div>
+    <div class="hr"></div>
+    <p>Respaldo manual en archivo JSON:</p>
+    <div class="actions">
+      <button class="btn" type="button" id="exportBtn">Exportar</button>
+      <button class="btn" type="button" id="importBtn">Importar</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+    <div class="hr"></div>
+    <p class="small" id="pricesInfo"></p>
+    <div class="actions"><button class="btn" value="close">Cerrar</button></div>
+  </form>
+</dialog>
+
+<dialog id="zoom"><form method="dialog"><button style="all:unset;cursor:zoom-out;display:block"><img id="zoomImg" alt=""></button></form></dialog>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================
+   Configuración
+   ========================================================= */
+const CONFIG = {
+  setCode: 'mar',
+  // Enlace a Moxfield por carta. Moxfield no expone un ID derivable desde Scryfall,
+  // por eso se usa su búsqueda por nombre. Ajusta la plantilla si prefieres otra ruta.
+  moxfieldCardUrl: (c) => `https://moxfield.com/search?q=${encodeURIComponent(c.name)}`,
+  moxfieldSetUrl: 'https://moxfield.com/sets/E1j6B',
+  cardKingdomSearchUrl: (c) => `https://www.cardkingdom.com/catalog/search?search=header&filter%5Bname%5D=${encodeURIComponent(c.name)}`,
+  gistFile: 'mar-collection.json',
+  storageKey: 'mar-collection-v1',
+  cardsCacheKey: 'mar-cards-cache-v1',
+  syncKey: 'mar-sync-v1',
+};
+
+/* =========================================================
+   Utilidades
+   ========================================================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const usd = (n) => n == null ? '–' : '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+let toastTimer;
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+/* =========================================================
+   Estado
+   collection.owned = { "<número>": { v: true|false, t: timestamp } }
+   Se guarda la marca de tiempo por carta para fusionar sin perder cambios.
+   ========================================================= */
+let cards = [];
+let pricesMeta = null;
+let collection = store.get(CONFIG.storageKey, { owned: {}, updatedAt: 0 });
+const filters = { q: '', owned: 'all', origin: 'all', colors: new Set(), sort: 'num' };
+
+const isOwned = (num) => !!collection.owned[num]?.v;
+
+function setOwned(num, value) {
+  collection.owned[num] = { v: value, t: Date.now() };
+  collection.updatedAt = Date.now();
+  store.set(CONFIG.storageKey, collection);
+  schedulePush();
+}
+
+/* =========================================================
+   Carga de cartas
+   1) data/cards.json (generado a diario por GitHub Actions, incluye precio Card Kingdom)
+   2) Si no existe, Scryfall en vivo (precio TCGplayer como respaldo)
+   3) Si no hay conexión, la última copia guardada
+   ========================================================= */
+function normalizeScryfall(c) {
+  const face = c.card_faces?.[0] || {};
+  const img = c.image_uris || face.image_uris || {};
+  const colors = c.color_identity || [];
+  return {
+    id: c.id,
+    num: c.collector_number,
+    name: c.name,
+    setName: c.set_name,
+    colors,
+    image: img.normal || img.large || '',
+    imageLarge: img.large || img.png || img.normal || '',
+    scryfallUrl: c.scryfall_uri,
+    ckPrice: null,
+    ckUrl: null,
+    tcgPrice: c.prices?.usd ? +c.prices.usd : (c.prices?.usd_foil ? +c.prices.usd_foil : null),
+  };
+}
+
+async function fetchFromScryfall() {
+  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent('set:' + CONFIG.setCode)}&unique=prints&order=set`;
+  const out = [];
+  while (url) {
+    const r = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!r.ok) throw new Error('Scryfall ' + r.status);
+    const j = await r.json();
+    out.push(...j.data.map(normalizeScryfall));
+    url = j.has_more ? j.next_page : null;
+    if (url) await new Promise((res) => setTimeout(res, 120)); // respetar el límite de Scryfall
+  }
+  return { cards: out, meta: { source: 'scryfall-live', updatedAt: new Date().toISOString() } };
+}
+
+async function loadCards() {
+  let data = null;
+  try {
+    const r = await fetch('data/cards.json', { cache: 'no-cache' });
+    if (r.ok) {
+      const j = await r.json();
+      if (Array.isArray(j.cards) && j.cards.length) data = { cards: j.cards, meta: j.meta || {} };
+    }
+  } catch {}
+  if (!data) {
+    try { data = await fetchFromScryfall(); }
+    catch {
+      const cached = store.get(CONFIG.cardsCacheKey, null);
+      if (cached) { data = cached; showNotice('Sin conexión: se muestran los datos guardados.'); }
+    }
+  }
+  if (!data) { $('#grid').innerHTML = '<div class="empty">No se pudieron cargar las cartas. Revisa tu conexión.</div>'; return; }
+  store.set(CONFIG.cardsCacheKey, data);
+  cards = data.cards.slice().sort((a, b) => parseInt(a.num) - parseInt(b.num) || String(a.num).localeCompare(String(b.num)));
+  pricesMeta = data.meta;
+  if (pricesMeta?.source === 'scryfall-live') {
+    showNotice('Aún no hay precios de Card Kingdom (se generan con la tarea diaria). Mientras tanto se muestra el precio de TCGplayer.');
+  }
+  render();
+}
+
+function showNotice(msg) { $('#notice').innerHTML = `<div class="notice">${esc(msg)}</div>`; }
+
+/* =========================================================
+   Cálculos y filtros
+   ========================================================= */
+const origin = (c) => (parseInt(c.num) <= 40 ? 'spm' : 'msh');
+const originLabel = (c) => (origin(c) === 'spm' ? 'Spider-Man' : 'Super Heroes');
+const priceOf = (c) => (c.ckPrice != null ? c.ckPrice : c.tcgPrice);
+function colorKey(c) {
+  const ci = c.colors || [];
+  if (ci.length === 0) return 'C';
+  if (ci.length > 1) return 'M';
+  return ci[0];
+}
+
+function filtered() {
+  const q = filters.q.trim().toLowerCase();
+  let list = cards.filter((c) => {
+    if (q && !(c.name.toLowerCase().includes(q) || String(c.num) === q.replace('#', ''))) return false;
+    if (filters.owned === 'owned' && !isOwned(c.num)) return false;
+    if (filters.owned === 'missing' && isOwned(c.num)) return false;
+    if (filters.origin !== 'all' && origin(c) !== filters.origin) return false;
+    if (filters.colors.size && !filters.colors.has(colorKey(c))) return false;
+    return true;
+  });
+  const p = (c) => priceOf(c) ?? -1;
+  const byNum = (a, b) => parseInt(a.num) - parseInt(b.num) || String(a.num).localeCompare(String(b.num));
+  if (filters.sort === 'num') list.sort(byNum);
+  else if (filters.sort === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
+  else if (filters.sort === 'price-desc') list.sort((a, b) => p(b) - p(a));
+  else if (filters.sort === 'price-asc') list.sort((a, b) => (p(a) < 0 ? 1e9 : p(a)) - (p(b) < 0 ? 1e9 : p(b)));
+  return list;
+}
+
+/* =========================================================
+   Render
+   ========================================================= */
+function cardHTML(c) {
+  const owned = isOwned(c.num);
+  const price = priceOf(c);
+  const fallback = c.ckPrice == null && c.tcgPrice != null;
+  const ckLink = c.ckUrl || CONFIG.cardKingdomSearchUrl(c);
+  return `
+  <article class="card ${owned ? 'is-owned' : ''}" data-num="${esc(c.num)}">
+    <button class="thumb" data-zoom="${esc(c.imageLarge || c.image)}" aria-label="Ver ${esc(c.name)} en grande">
+      ${c.image ? `<img loading="lazy" decoding="async" src="${esc(c.image)}" alt="${esc(c.name)}">` : ''}
+      <span class="num">#${esc(c.num)}</span>
+    </button>
+    <div class="body">
+      <h3 class="name">${esc(c.name)}</h3>
+      <div class="meta">${esc(c.setName || 'Marvel Universe')} (MAR)</div>
+      <div class="price ${fallback ? 'fallback' : ''}">${usd(price)}<span class="src">${price == null ? '' : fallback ? 'TCG' : 'CK'}</span></div>
+      <div class="links">
+        <a href="${esc(CONFIG.moxfieldCardUrl(c))}" target="_blank" rel="noopener">Moxfield</a>
+        <a href="${esc(ckLink)}" target="_blank" rel="noopener" title="Card Kingdom">CK</a>
+        ${c.scryfallUrl ? `<a href="${esc(c.scryfallUrl)}" target="_blank" rel="noopener">Scryfall</a>` : ''}
+      </div>
+      <button class="toggle" data-toggle="${esc(c.num)}" aria-pressed="${owned}">${owned ? '✓ La tengo' : 'No la tengo'}</button>
+    </div>
+  </article>`;
+}
+
+function renderStats() {
+  const total = cards.length;
+  let have = 0, vOwned = 0, vMissing = 0, vTotal = 0;
+  for (const c of cards) {
+    const p = priceOf(c) || 0;
+    vTotal += p;
+    if (isOwned(c.num)) { have++; vOwned += p; } else vMissing += p;
+  }
+  $('#progressText').textContent = `${have} / ${total}${total ? ` · ${Math.round((have / total) * 100)}%` : ''}`;
+  $('#progressBar').style.width = total ? `${(have / total) * 100}%` : '0';
+  $('#valOwned').textContent = usd(vOwned);
+  $('#valMissing').textContent = usd(vMissing);
+  $('#valTotal').textContent = usd(vTotal);
+}
+
+const SECTIONS = [
+  { key: 'spm', title: "Marvel's Spider-Man", range: '#1–40' },
+  { key: 'msh', title: 'Marvel Super Heroes', range: '#41–100' },
+];
+
+function sectionStats(key) {
+  const all = cards.filter((c) => origin(c) === key);
+  const have = all.filter((c) => isOwned(c.num));
+  const value = have.reduce((s, c) => s + (priceOf(c) || 0), 0);
+  return { total: all.length, have: have.length, value };
+}
+
+function sectionHeadHTML(sec) {
+  const st = sectionStats(sec.key);
+  return `
+    <div class="section-head">
+      <h2>${esc(sec.title)}</h2><span class="range">${sec.range}</span>
+      <span class="sec-stats" data-sec-stats="${sec.key}"><strong>${st.have} / ${st.total}</strong> · ${usd(st.value)}</span>
+    </div>
+    <div class="sec-bar"><div data-sec-bar="${sec.key}" style="width:${st.total ? (st.have / st.total) * 100 : 0}%"></div></div>`;
+}
+
+function renderSectionStats() {
+  for (const sec of SECTIONS) {
+    const st = sectionStats(sec.key);
+    const t = $(`[data-sec-stats="${sec.key}"]`);
+    const b = $(`[data-sec-bar="${sec.key}"]`);
+    if (t) t.innerHTML = `<strong>${st.have} / ${st.total}</strong> · ${usd(st.value)}`;
+    if (b) b.style.width = `${st.total ? (st.have / st.total) * 100 : 0}%`;
+  }
+}
+
+function render() {
+  renderStats();
+  const list = filtered();
+  $('#count').textContent = `${list.length} carta${list.length === 1 ? '' : 's'}`;
+  if (!list.length) { $('#grid').innerHTML = '<div class="empty">No hay cartas con esos filtros.</div>'; return; }
+  $('#grid').innerHTML = SECTIONS.map((sec) => {
+    const items = list.filter((c) => origin(c) === sec.key);
+    if (!items.length) return '';
+    return `<section class="section" aria-label="${esc(sec.title)}">${sectionHeadHTML(sec)}<div class="grid">${items.map(cardHTML).join('')}</div></section>`;
+  }).join('');
+}
+
+function updateOne(num) {
+  const el = $(`.card[data-num="${CSS.escape(num)}"]`);
+  const c = cards.find((x) => String(x.num) === String(num));
+  if (!el || !c) return render();
+  // Si el filtro actual excluye la carta, se vuelve a pintar la lista completa
+  if ((filters.owned === 'owned' && !isOwned(num)) || (filters.owned === 'missing' && isOwned(num))) return render();
+  el.outerHTML = cardHTML(c);
+  renderStats();
+  renderSectionStats();
+}
+
+/* =========================================================
+   Eventos de la interfaz
+   ========================================================= */
+$('#grid').addEventListener('click', (e) => {
+  const t = e.target.closest('[data-toggle]');
+  if (t) {
+    const num = t.dataset.toggle;
+    setOwned(num, !isOwned(num));
+    if (navigator.vibrate) navigator.vibrate(10);
+    updateOne(num);
+    return;
+  }
+  const z = e.target.closest('[data-zoom]');
+  if (z && z.dataset.zoom) { $('#zoomImg').src = z.dataset.zoom; $('#zoom').showModal(); }
+});
+$('#zoom').addEventListener('click', () => $('#zoom').close());
+
+let searchTimer;
+$('#search').addEventListener('input', (e) => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { filters.q = e.target.value; render(); }, 120);
+});
+function bindSeg(id, key) {
+  $(id).addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    $$('button', $(id)).forEach((x) => x.setAttribute('aria-pressed', x === b));
+    filters[key] = b.dataset.v; render();
+  });
+}
+bindSeg('#fOwned', 'owned');
+bindSeg('#fOrigin', 'origin');
+$('#fColors').addEventListener('click', (e) => {
+  const b = e.target.closest('.pip'); if (!b) return;
+  const c = b.dataset.c;
+  filters.colors.has(c) ? filters.colors.delete(c) : filters.colors.add(c);
+  b.setAttribute('aria-pressed', filters.colors.has(c));
+  render();
+});
+$('#sort').addEventListener('change', (e) => { filters.sort = e.target.value; render(); });
+
+/* =========================================================
+   Sincronización con GitHub Gist
+   ========================================================= */
+let sync = store.get(CONFIG.syncKey, { token: '', gistId: '', lastSync: 0 });
+let pushTimer = null, syncing = false;
+
+function setSyncState(state, label) {
+  const dot = $('#syncDot');
+  dot.className = 'sync-dot' + (state ? ' ' + state : '');
+  $('#syncLabel').textContent = label;
+}
+function refreshSyncBadge() {
+  if (!sync.token) return setSyncState('', 'Nube');
+  setSyncState('ok', 'Sincronizado');
+}
+
+async function gh(path, opts = {}) {
+  const r = await fetch('https://api.github.com' + path, {
+    ...opts,
+    headers: {
+      Accept: 'application/vnd.github+json',
+      Authorization: `Bearer ${sync.token}`,
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(opts.body ? { 'Content-Type': 'application/json' } : {}),
+    },
+  });
+  if (!r.ok) {
+    const msg = r.status === 401 ? 'Token inválido o vencido' : r.status === 404 ? 'Gist no encontrado' : `GitHub ${r.status}`;
+    throw new Error(msg);
+  }
+  return r.status === 204 ? null : r.json();
+}
+
+async function findOrCreateGist() {
+  if (sync.gistId) return sync.gistId;
+  // Buscar un Gist existente con el archivo de la colección
+  for (let page = 1; page <= 5; page++) {
+    const list = await gh(`/gists?per_page=100&page=${page}`);
+    const hit = list.find((g) => g.files && g.files[CONFIG.gistFile]);
+    if (hit) { sync.gistId = hit.id; store.set(CONFIG.syncKey, sync); return hit.id; }
+    if (list.length < 100) break;
+  }
+  const created = await gh('/gists', {
+    method: 'POST',
+    body: JSON.stringify({
+      description: 'Colección Marvel Universe (MAR) – sincronización',
+      public: false,
+      files: { [CONFIG.gistFile]: { content: JSON.stringify(collection, null, 1) } },
+    }),
+  });
+  sync.gistId = created.id; store.set(CONFIG.syncKey, sync);
+  return created.id;
+}
+
+function merge(a, b) {
+  const owned = { ...a.owned };
+  for (const [k, v] of Object.entries(b.owned || {})) {
+    if (!owned[k] || (v.t || 0) > (owned[k].t || 0)) owned[k] = v;
+  }
+  return { owned, updatedAt: Math.max(a.updatedAt || 0, b.updatedAt || 0) };
+}
+
+async function syncNow({ quiet = false } = {}) {
+  if (!sync.token || syncing) return;
+  syncing = true; setSyncState('busy', 'Sincronizando…');
+  try {
+    const id = await findOrCreateGist();
+    const g = await gh(`/gists/${id}`);
+    const f = g.files?.[CONFIG.gistFile];
+    let remote = { owned: {}, updatedAt: 0 };
+    if (f) {
+      const text = f.truncated ? await (await fetch(f.raw_url)).text() : f.content;
+      try { remote = JSON.parse(text); } catch {}
+    }
+    const merged = merge(collection, remote);
+    const changedLocal = JSON.stringify(merged.owned) !== JSON.stringify(collection.owned);
+    const changedRemote = JSON.stringify(merged.owned) !== JSON.stringify(remote.owned || {});
+    collection = merged; store.set(CONFIG.storageKey, collection);
+    if (changedRemote) {
+      await gh(`/gists/${id}`, { method: 'PATCH', body: JSON.stringify({ files: { [CONFIG.gistFile]: { content: JSON.stringify(collection, null, 1) } } }) });
+    }
+    sync.lastSync = Date.now(); store.set(CONFIG.syncKey, sync);
+    setSyncState('ok', 'Sincronizado');
+    if (changedLocal) render();
+    if (!quiet) toast('Colección sincronizada');
+  } catch (err) {
+    setSyncState('err', 'Error');
+    if (!quiet) toast('Error al sincronizar: ' + err.message);
+  } finally {
+    syncing = false;
+    updateSyncInfo();
+  }
+}
+
+function schedulePush() {
+  if (!sync.token) return;
+  setSyncState('busy', 'Pendiente');
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(() => syncNow({ quiet: true }), 1500);
+}
+
+function updateSyncInfo() {
+  $('#syncInfo').textContent = sync.token
+    ? `Vinculado${sync.gistId ? ' · Gist ' + sync.gistId.slice(0, 8) + '…' : ''}${sync.lastSync ? ' · última sincronización ' + new Date(sync.lastSync).toLocaleString('es') : ''}`
+    : 'Sin vincular: la colección solo está en este dispositivo.';
+  const m = pricesMeta;
+  $('#pricesInfo').textContent = m?.updatedAt
+    ? `Precios: ${m.source === 'scryfall-live' ? 'TCGplayer (Scryfall en vivo)' : 'Card Kingdom'} · actualizados ${new Date(m.updatedAt).toLocaleString('es')}`
+    : '';
+}
+
+$('#syncBtn').addEventListener('click', () => {
+  $('#tokenInput').value = sync.token ? '••••••••••••' : '';
+  $('#gistInput').value = sync.gistId || '';
+  updateSyncInfo();
+  $('#syncDlg').showModal();
+});
+$('#saveSync').addEventListener('click', async () => {
+  const tok = $('#tokenInput').value.trim();
+  if (tok && !tok.startsWith('•')) sync.token = tok;
+  sync.gistId = $('#gistInput').value.trim();
+  if (!sync.token) return toast('Ingresa un token de GitHub');
+  store.set(CONFIG.syncKey, sync);
+  await syncNow();
+  $('#gistInput').value = sync.gistId || '';
+});
+$('#syncNow').addEventListener('click', () => sync.token ? syncNow() : toast('Primero vincula un token'));
+$('#unlink').addEventListener('click', () => {
+  if (!confirm('¿Desvincular la nube en este dispositivo? Tu colección local no se borra.')) return;
+  sync = { token: '', gistId: '', lastSync: 0 }; store.del(CONFIG.syncKey);
+  $('#tokenInput').value = ''; $('#gistInput').value = '';
+  refreshSyncBadge(); updateSyncInfo(); toast('Nube desvinculada');
+});
+
+/* ---------- Exportar / importar ---------- */
+$('#exportBtn').addEventListener('click', () => {
+  const owned = Object.entries(collection.owned).filter(([, v]) => v.v).map(([k]) => k).sort((a, b) => parseInt(a) - parseInt(b));
+  const blob = new Blob([JSON.stringify({ set: 'MAR', ownedNumbers: owned, ...collection }, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `coleccion-mar-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+$('#importBtn').addEventListener('click', () => $('#importFile').click());
+$('#importFile').addEventListener('change', async (e) => {
+  const file = e.target.files[0]; if (!file) return;
+  try {
+    const j = JSON.parse(await file.text());
+    let incoming = { owned: {}, updatedAt: Date.now() };
+    if (j.owned) incoming = j;
+    else if (Array.isArray(j.ownedNumbers)) j.ownedNumbers.forEach((n) => (incoming.owned[n] = { v: true, t: Date.now() }));
+    collection = merge(collection, incoming);
+    store.set(CONFIG.storageKey, collection);
+    render(); schedulePush(); toast('Colección importada');
+  } catch { toast('Archivo no válido'); }
+  e.target.value = '';
+});
+
+/* =========================================================
+   Inicio
+   ========================================================= */
+refreshSyncBadge();
+loadCards().then(() => syncNow({ quiet: true }));
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow({ quiet: true }); });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+</script>
+</body>
+</html>
