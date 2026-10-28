@@ -2,7 +2,7 @@
  "meta": {
   "set": "MAR",
   "source": "cardkingdom",
-  "updatedAt": "2026-10-28T03:12:58+00:00",
+  "updatedAt": "2026-10-28T16:36:42+00:00",
   "count": 100,
   "withCardKingdomPrice": 100
  },
@@ -18,7 +18,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/c/ec191a2f-12b1-438b-b2fe-f88fb82d9b87.jpg?1783905392",
    "imageLarge": "https://cards.scryfall.io/large/front/e/c/ec191a2f-12b1-438b-b2fe-f88fb82d9b87.jpg?1783905392",
    "scryfallUrl": "https://scryfall.com/card/mar/1/comeuppance?utm_source=api",
-   "tcgPrice": 5.0,
+   "tcgPrice": 5.13,
    "ckPrice": 7.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/comeuppance"
   },
@@ -63,7 +63,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/d/3dfddf82-4dc7-4749-aa1c-d58cc6858cc0.jpg?1783905391",
    "imageLarge": "https://cards.scryfall.io/large/front/3/d/3dfddf82-4dc7-4749-aa1c-d58cc6858cc0.jpg?1783905391",
    "scryfallUrl": "https://scryfall.com/card/mar/4/path-to-exile?utm_source=api",
-   "tcgPrice": 5.69,
+   "tcgPrice": 5.86,
    "ckPrice": 6.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/path-to-exile-0004"
   },
@@ -78,7 +78,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/b/2bb8ede7-ca50-4df8-aa30-f1b14520163f.jpg?1783905391",
    "imageLarge": "https://cards.scryfall.io/large/front/2/b/2bb8ede7-ca50-4df8-aa30-f1b14520163f.jpg?1783905391",
    "scryfallUrl": "https://scryfall.com/card/mar/5/reprieve?utm_source=api",
-   "tcgPrice": 2.92,
+   "tcgPrice": 2.88,
    "ckPrice": 3.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/reprieve"
   },
@@ -93,7 +93,7 @@
    "image": "https://cards.scryfall.io/normal/front/4/2/4266ac5c-40dc-4fe3-9f42-e03cea5277ea.jpg?1783905390",
    "imageLarge": "https://cards.scryfall.io/large/front/4/2/4266ac5c-40dc-4fe3-9f42-e03cea5277ea.jpg?1783905390",
    "scryfallUrl": "https://scryfall.com/card/mar/6/rest-in-peace?utm_source=api",
-   "tcgPrice": 1.92,
+   "tcgPrice": 1.75,
    "ckPrice": 1.79,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/rest-in-peace"
   },
@@ -123,7 +123,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/2/e23cbf2a-c07b-4202-826d-9b3c4a35a02e.jpg?1783905389",
    "imageLarge": "https://cards.scryfall.io/large/front/e/2/e23cbf2a-c07b-4202-826d-9b3c4a35a02e.jpg?1783905389",
    "scryfallUrl": "https://scryfall.com/card/mar/8/clever-impersonator?utm_source=api",
-   "tcgPrice": 3.66,
+   "tcgPrice": 3.56,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/clever-impersonator"
   },
@@ -138,7 +138,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/1/610a7782-ffe4-4b1c-bcc2-b3d89357e3da.jpg?1783905389",
    "imageLarge": "https://cards.scryfall.io/large/front/6/1/610a7782-ffe4-4b1c-bcc2-b3d89357e3da.jpg?1783905389",
    "scryfallUrl": "https://scryfall.com/card/mar/9/counterspell?utm_source=api",
-   "tcgPrice": 7.48,
+   "tcgPrice": 7.58,
    "ckPrice": 11.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/counterspell-0009"
   },
@@ -153,7 +153,7 @@
    "image": "https://cards.scryfall.io/normal/front/d/e/deda48c4-527f-4367-83ed-3b3c30beaab8.jpg?1783905389",
    "imageLarge": "https://cards.scryfall.io/large/front/d/e/deda48c4-527f-4367-83ed-3b3c30beaab8.jpg?1783905389",
    "scryfallUrl": "https://scryfall.com/card/mar/10/lorthos-the-tidemaker?utm_source=api",
-   "tcgPrice": 1.01,
+   "tcgPrice": 0.97,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/lorthos-the-tidemaker-doc-ock-armed-and-dangerous"
   },
@@ -168,7 +168,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/5/75b75aaf-499d-47b0-ab6d-873240b641b2.jpg?1783905389",
    "imageLarge": "https://cards.scryfall.io/large/front/7/5/75b75aaf-499d-47b0-ab6d-873240b641b2.jpg?1783905389",
    "scryfallUrl": "https://scryfall.com/card/mar/11/mindbreak-trap?utm_source=api",
-   "tcgPrice": 7.09,
+   "tcgPrice": 7.11,
    "ckPrice": 9.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/mindbreak-trap"
   },
@@ -183,7 +183,7 @@
    "image": "https://cards.scryfall.io/normal/front/5/d/5df07a06-e585-412d-a6db-cb5a78a68b6e.jpg?1783905388",
    "imageLarge": "https://cards.scryfall.io/large/front/5/d/5df07a06-e585-412d-a6db-cb5a78a68b6e.jpg?1783905388",
    "scryfallUrl": "https://scryfall.com/card/mar/12/mystic-confluence?utm_source=api",
-   "tcgPrice": 2.32,
+   "tcgPrice": 2.36,
    "ckPrice": 2.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/mystic-confluence"
   },
@@ -198,7 +198,7 @@
    "image": "https://cards.scryfall.io/normal/front/a/c/ac1042e0-af4d-42b0-9d43-34b3fa5daf92.jpg?1783905390",
    "imageLarge": "https://cards.scryfall.io/large/front/a/c/ac1042e0-af4d-42b0-9d43-34b3fa5daf92.jpg?1783905390",
    "scryfallUrl": "https://scryfall.com/card/mar/13/ponder?utm_source=api",
-   "tcgPrice": 5.68,
+   "tcgPrice": 5.58,
    "ckPrice": 8.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/ponder"
   },
@@ -213,7 +213,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/b/3b4d51b9-f99e-4253-83d7-4dc6ef9bbe41.jpg?1783905387",
    "imageLarge": "https://cards.scryfall.io/large/front/3/b/3b4d51b9-f99e-4253-83d7-4dc6ef9bbe41.jpg?1783905387",
    "scryfallUrl": "https://scryfall.com/card/mar/14/rite-of-replication?utm_source=api",
-   "tcgPrice": 3.26,
+   "tcgPrice": 3.25,
    "ckPrice": 4.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/rite-of-replication"
   },
@@ -243,7 +243,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/f/cf10e116-d1da-4570-be0e-c597a9e75d72.jpg?1783905387",
    "imageLarge": "https://cards.scryfall.io/large/front/c/f/cf10e116-d1da-4570-be0e-c597a9e75d72.jpg?1783905387",
    "scryfallUrl": "https://scryfall.com/card/mar/16/feed-the-swarm?utm_source=api",
-   "tcgPrice": 2.12,
+   "tcgPrice": 1.97,
    "ckPrice": 2.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/feed-the-swarm"
   },
@@ -258,7 +258,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/d/0db3f148-4ede-4134-b2e0-2bb513d9cefc.jpg?1783905388",
    "imageLarge": "https://cards.scryfall.io/large/front/0/d/0db3f148-4ede-4134-b2e0-2bb513d9cefc.jpg?1783905388",
    "scryfallUrl": "https://scryfall.com/card/mar/17/hex?utm_source=api",
-   "tcgPrice": 1.8,
+   "tcgPrice": 1.78,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/hex"
   },
@@ -273,7 +273,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/2/82d69044-8d8c-4ae3-853e-de180f4706ca.jpg?1783905388",
    "imageLarge": "https://cards.scryfall.io/large/front/8/2/82d69044-8d8c-4ae3-853e-de180f4706ca.jpg?1783905388",
    "scryfallUrl": "https://scryfall.com/card/mar/18/infernal-grasp?utm_source=api",
-   "tcgPrice": 4.33,
+   "tcgPrice": 4.2,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/infernal-grasp"
   },
@@ -288,7 +288,7 @@
    "image": "https://cards.scryfall.io/normal/front/d/7/d7b0a0d5-a9fe-49ea-9250-8825b36accc0.jpg?1783905387",
    "imageLarge": "https://cards.scryfall.io/large/front/d/7/d7b0a0d5-a9fe-49ea-9250-8825b36accc0.jpg?1783905387",
    "scryfallUrl": "https://scryfall.com/card/mar/19/opposition-agent?utm_source=api",
-   "tcgPrice": 20.34,
+   "tcgPrice": 20.06,
    "ckPrice": 24.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/opposition-agent"
   },
@@ -303,7 +303,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/e/3e560cb9-3036-46a2-a5c7-edb04d0095b7.jpg?1783905386",
    "imageLarge": "https://cards.scryfall.io/large/front/3/e/3e560cb9-3036-46a2-a5c7-edb04d0095b7.jpg?1783905386",
    "scryfallUrl": "https://scryfall.com/card/mar/20/reanimate?utm_source=api",
-   "tcgPrice": 22.86,
+   "tcgPrice": 22.76,
    "ckPrice": 23.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/reanimate"
   },
@@ -318,7 +318,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/e/eea57be1-032d-40ec-8091-92f89670e4a1.jpg?1783905385",
    "imageLarge": "https://cards.scryfall.io/large/front/e/e/eea57be1-032d-40ec-8091-92f89670e4a1.jpg?1783905385",
    "scryfallUrl": "https://scryfall.com/card/mar/21/saw-in-half?utm_source=api",
-   "tcgPrice": 4.78,
+   "tcgPrice": 4.85,
    "ckPrice": 7.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/saw-in-half"
   },
@@ -333,7 +333,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/4/c47d09a5-a6d2-4bc2-bf65-b32e3c897c49.jpg?1783905384",
    "imageLarge": "https://cards.scryfall.io/large/front/c/4/c47d09a5-a6d2-4bc2-bf65-b32e3c897c49.jpg?1783905384",
    "scryfallUrl": "https://scryfall.com/card/mar/22/skithiryx-the-blight-dragon?utm_source=api",
-   "tcgPrice": 9.96,
+   "tcgPrice": 10.17,
    "ckPrice": 14.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/skithiryx-the-blight-dragon-venom-king-in-black"
   },
@@ -348,7 +348,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/e/7ebd1f51-2db6-4c3f-95cb-8035a410a8e8.jpg?1783905386",
    "imageLarge": "https://cards.scryfall.io/large/front/7/e/7ebd1f51-2db6-4c3f-95cb-8035a410a8e8.jpg?1783905386",
    "scryfallUrl": "https://scryfall.com/card/mar/23/goblin-bombardment?utm_source=api",
-   "tcgPrice": 3.56,
+   "tcgPrice": 3.57,
    "ckPrice": 4.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/goblin-bombardment"
   },
@@ -367,7 +367,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/8/08eb1bef-b00d-490b-a631-2849e0d1fd8e.jpg?1783905384",
    "imageLarge": "https://cards.scryfall.io/large/front/0/8/08eb1bef-b00d-490b-a631-2849e0d1fd8e.jpg?1783905384",
    "scryfallUrl": "https://scryfall.com/card/mar/24/najeela-the-blade-blossom?utm_source=api",
-   "tcgPrice": 4.6,
+   "tcgPrice": 4.55,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/najeela-the-blade-blossom-spider-gwen-web-warrior"
   },
@@ -382,7 +382,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/4/e473a591-9aae-4af2-9b25-96820b317df8.jpg?1783905385",
    "imageLarge": "https://cards.scryfall.io/large/front/e/4/e473a591-9aae-4af2-9b25-96820b317df8.jpg?1783905385",
    "scryfallUrl": "https://scryfall.com/card/mar/25/relentless-assault?utm_source=api",
-   "tcgPrice": 5.23,
+   "tcgPrice": 5.17,
    "ckPrice": 6.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/relentless-assault"
   },
@@ -397,7 +397,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/9/291ffa45-f395-420f-8862-9a685b65ce69.jpg?1783905384",
    "imageLarge": "https://cards.scryfall.io/large/front/2/9/291ffa45-f395-420f-8862-9a685b65ce69.jpg?1783905384",
    "scryfallUrl": "https://scryfall.com/card/mar/26/savage-beating?utm_source=api",
-   "tcgPrice": 9.53,
+   "tcgPrice": 10.13,
    "ckPrice": 14.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/savage-beating"
   },
@@ -412,7 +412,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/0/8066310c-dcd6-465b-a0ae-44c8602367de.jpg?1783905384",
    "imageLarge": "https://cards.scryfall.io/large/front/8/0/8066310c-dcd6-465b-a0ae-44c8602367de.jpg?1783905384",
    "scryfallUrl": "https://scryfall.com/card/mar/27/shock?utm_source=api",
-   "tcgPrice": 1.26,
+   "tcgPrice": 1.27,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/shock"
   },
@@ -442,7 +442,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/3/33ba9e5a-d078-4a47-b181-0ca7d1596919.jpg?1783905383",
    "imageLarge": "https://cards.scryfall.io/large/front/3/3/33ba9e5a-d078-4a47-b181-0ca7d1596919.jpg?1783905383",
    "scryfallUrl": "https://scryfall.com/card/mar/29/unexpected-windfall?utm_source=api",
-   "tcgPrice": 4.6,
+   "tcgPrice": 4.57,
    "ckPrice": 5.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/unexpected-windfall"
   },
@@ -457,7 +457,7 @@
    "image": "https://cards.scryfall.io/normal/front/a/6/a6e83b7b-07df-4ff0-8942-8fdb3f1502f9.jpg?1783905382",
    "imageLarge": "https://cards.scryfall.io/large/front/a/6/a6e83b7b-07df-4ff0-8942-8fdb3f1502f9.jpg?1783905382",
    "scryfallUrl": "https://scryfall.com/card/mar/30/winds-of-change?utm_source=api",
-   "tcgPrice": 4.46,
+   "tcgPrice": 4.37,
    "ckPrice": 5.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/winds-of-change"
   },
@@ -472,7 +472,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/7/77e2f5ac-5c0d-4503-b8ab-fee00eaaa4a3.jpg?1783905382",
    "imageLarge": "https://cards.scryfall.io/large/front/7/7/77e2f5ac-5c0d-4503-b8ab-fee00eaaa4a3.jpg?1783905382",
    "scryfallUrl": "https://scryfall.com/card/mar/31/arachnogenesis?utm_source=api",
-   "tcgPrice": 9.13,
+   "tcgPrice": 8.96,
    "ckPrice": 9.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/arachnogenesis"
   },
@@ -502,7 +502,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/f/7f419a04-7a18-4ea4-9581-bbc35bec4f16.jpg?1783905381",
    "imageLarge": "https://cards.scryfall.io/large/front/7/f/7f419a04-7a18-4ea4-9581-bbc35bec4f16.jpg?1783905381",
    "scryfallUrl": "https://scryfall.com/card/mar/33/beast-within?utm_source=api",
-   "tcgPrice": 4.51,
+   "tcgPrice": 4.68,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/beast-within-0033"
   },
@@ -517,7 +517,7 @@
    "image": "https://cards.scryfall.io/normal/front/5/f/5fb701f6-bfad-4b43-9a0f-85496973d849.jpg?1783905380",
    "imageLarge": "https://cards.scryfall.io/large/front/5/f/5fb701f6-bfad-4b43-9a0f-85496973d849.jpg?1783905380",
    "scryfallUrl": "https://scryfall.com/card/mar/34/heroic-intervention?utm_source=api",
-   "tcgPrice": 13.62,
+   "tcgPrice": 13.51,
    "ckPrice": 18.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/heroic-intervention-0034"
   },
@@ -532,7 +532,7 @@
    "image": "https://cards.scryfall.io/normal/front/9/6/96c20d6f-6272-42f1-bfda-308ce7c4206a.jpg?1783905379",
    "imageLarge": "https://cards.scryfall.io/large/front/9/6/96c20d6f-6272-42f1-bfda-308ce7c4206a.jpg?1783905379",
    "scryfallUrl": "https://scryfall.com/card/mar/35/hunters-insight?utm_source=api",
-   "tcgPrice": 2.52,
+   "tcgPrice": 2.49,
    "ckPrice": 2.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/hunters-insight"
   },
@@ -547,7 +547,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/c/0c9c514f-f506-4b2c-af58-79922834cde7.jpg?1783905379",
    "imageLarge": "https://cards.scryfall.io/large/front/0/c/0c9c514f-f506-4b2c-af58-79922834cde7.jpg?1783905379",
    "scryfallUrl": "https://scryfall.com/card/mar/36/parallel-lives?utm_source=api",
-   "tcgPrice": 27.73,
+   "tcgPrice": 27.47,
    "ckPrice": 34.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/parallel-lives"
   },
@@ -577,7 +577,7 @@
    "image": "https://cards.scryfall.io/normal/front/1/0/10c51d68-9a69-4784-9ce1-d6beaafa3ed3.jpg?1783905379",
    "imageLarge": "https://cards.scryfall.io/large/front/1/0/10c51d68-9a69-4784-9ce1-d6beaafa3ed3.jpg?1783905379",
    "scryfallUrl": "https://scryfall.com/card/mar/38/tangle?utm_source=api",
-   "tcgPrice": 6.6,
+   "tcgPrice": 6.49,
    "ckPrice": 8.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/tangle"
   },
@@ -593,7 +593,7 @@
    "image": "https://cards.scryfall.io/normal/front/5/a/5a2f6ccf-af93-4922-973d-6abfeb4d7cfc.jpg?1783905379",
    "imageLarge": "https://cards.scryfall.io/large/front/5/a/5a2f6ccf-af93-4922-973d-6abfeb4d7cfc.jpg?1783905379",
    "scryfallUrl": "https://scryfall.com/card/mar/39/alibou-ancient-witness?utm_source=api",
-   "tcgPrice": 2.94,
+   "tcgPrice": 2.91,
    "ckPrice": 2.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/alibou-ancient-witness-iron-spider-civil-warrior"
   },
@@ -609,7 +609,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/1/71c9ed41-8832-440d-a455-f52f284e8d14.jpg?1783905378",
    "imageLarge": "https://cards.scryfall.io/large/front/7/1/71c9ed41-8832-440d-a455-f52f284e8d14.jpg?1783905378",
    "scryfallUrl": "https://scryfall.com/card/mar/40/terminate?utm_source=api",
-   "tcgPrice": 5.29,
+   "tcgPrice": 5.18,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/terminate"
   },
@@ -624,7 +624,7 @@
    "image": "https://cards.scryfall.io/normal/front/5/d/5d393449-bdbe-4638-ba0b-7ec83f81b51e.jpg?1783903325",
    "imageLarge": "https://cards.scryfall.io/large/front/5/d/5d393449-bdbe-4638-ba0b-7ec83f81b51e.jpg?1783903325",
    "scryfallUrl": "https://scryfall.com/card/mar/41/archangel-of-thune?utm_source=api",
-   "tcgPrice": 19.06,
+   "tcgPrice": 19.1,
    "ckPrice": 22.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/archangel-of-thune-heaven-sent-marvel"
   },
@@ -639,7 +639,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/b/6b6b0a9f-0373-43c0-9c84-5c2efe902676.jpg?1783903323",
    "imageLarge": "https://cards.scryfall.io/large/front/6/b/6b6b0a9f-0373-43c0-9c84-5c2efe902676.jpg?1783903323",
    "scryfallUrl": "https://scryfall.com/card/mar/42/concerted-effort?utm_source=api",
-   "tcgPrice": 1.68,
+   "tcgPrice": 1.64,
    "ckPrice": 1.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/concerted-effort"
   },
@@ -654,7 +654,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/5/c55e5f0d-8a4b-4b6f-ab43-1268b6fac74e.jpg?1783903322",
    "imageLarge": "https://cards.scryfall.io/large/front/c/5/c55e5f0d-8a4b-4b6f-ab43-1268b6fac74e.jpg?1783903322",
    "scryfallUrl": "https://scryfall.com/card/mar/43/dont-move?utm_source=api",
-   "tcgPrice": 2.41,
+   "tcgPrice": 2.2,
    "ckPrice": 1.79,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/dont-move"
   },
@@ -669,7 +669,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/2/621e3239-b527-4154-bce6-b51241809fc5.jpg?1783903323",
    "imageLarge": "https://cards.scryfall.io/large/front/6/2/621e3239-b527-4154-bce6-b51241809fc5.jpg?1783903323",
    "scryfallUrl": "https://scryfall.com/card/mar/44/ephemerate?utm_source=api",
-   "tcgPrice": 4.6,
+   "tcgPrice": 4.74,
    "ckPrice": 5.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/ephemerate"
   },
@@ -699,7 +699,7 @@
    "image": "https://cards.scryfall.io/normal/front/f/7/f78673f6-8173-4d0e-ae50-539cad30aa5c.jpg?1783903324",
    "imageLarge": "https://cards.scryfall.io/large/front/f/7/f78673f6-8173-4d0e-ae50-539cad30aa5c.jpg?1783903324",
    "scryfallUrl": "https://scryfall.com/card/mar/46/light-of-promise?utm_source=api",
-   "tcgPrice": 1.14,
+   "tcgPrice": 1.13,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/light-of-promise"
   },
@@ -714,7 +714,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/2/e2e30b25-b710-4566-8b0f-56f6e390a446.jpg?1783903322",
    "imageLarge": "https://cards.scryfall.io/large/front/e/2/e2e30b25-b710-4566-8b0f-56f6e390a446.jpg?1783903322",
    "scryfallUrl": "https://scryfall.com/card/mar/47/path-to-exile?utm_source=api",
-   "tcgPrice": 5.26,
+   "tcgPrice": 5.16,
    "ckPrice": 6.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/path-to-exile-0047"
   },
@@ -729,7 +729,7 @@
    "image": "https://cards.scryfall.io/normal/front/b/b/bbc54478-d2f8-4abf-b664-cf014027c0dc.jpg?1783903320",
    "imageLarge": "https://cards.scryfall.io/large/front/b/b/bbc54478-d2f8-4abf-b664-cf014027c0dc.jpg?1783903320",
    "scryfallUrl": "https://scryfall.com/card/mar/48/return-to-the-ranks?utm_source=api",
-   "tcgPrice": 0.88,
+   "tcgPrice": 0.85,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/return-to-the-ranks"
   },
@@ -744,7 +744,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/6/e6a3a9fd-9653-45dd-b592-a36f85af8fc4.jpg?1783903320",
    "imageLarge": "https://cards.scryfall.io/large/front/e/6/e6a3a9fd-9653-45dd-b592-a36f85af8fc4.jpg?1783903320",
    "scryfallUrl": "https://scryfall.com/card/mar/49/righteous-fury?utm_source=api",
-   "tcgPrice": 0.9,
+   "tcgPrice": 0.88,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/righteous-fury"
   },
@@ -759,7 +759,7 @@
    "image": "https://cards.scryfall.io/normal/front/4/4/44398c81-593a-4967-acf2-ec9823a10d33.jpg?1783903321",
    "imageLarge": "https://cards.scryfall.io/large/front/4/4/44398c81-593a-4967-acf2-ec9823a10d33.jpg?1783903321",
    "scryfallUrl": "https://scryfall.com/card/mar/50/steelshapers-gift?utm_source=api",
-   "tcgPrice": 6.57,
+   "tcgPrice": 6.67,
    "ckPrice": 8.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/steelshapers-gift"
   },
@@ -774,7 +774,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/5/c54d5ea1-0cc9-4e84-b712-642d55915dae.jpg?1783903319",
    "imageLarge": "https://cards.scryfall.io/large/front/c/5/c54d5ea1-0cc9-4e84-b712-642d55915dae.jpg?1783903319",
    "scryfallUrl": "https://scryfall.com/card/mar/51/teferis-protection?utm_source=api",
-   "tcgPrice": 36.4,
+   "tcgPrice": 36.85,
    "ckPrice": 47.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/teferis-protection-tchallas-protection"
   },
@@ -789,7 +789,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/7/379f4020-a58c-484d-9b44-72b200884079.jpg?1783903320",
    "imageLarge": "https://cards.scryfall.io/large/front/3/7/379f4020-a58c-484d-9b44-72b200884079.jpg?1783903320",
    "scryfallUrl": "https://scryfall.com/card/mar/52/counterspell?utm_source=api",
-   "tcgPrice": 8.43,
+   "tcgPrice": 8.9,
    "ckPrice": 8.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/counterspell-0052"
   },
@@ -804,7 +804,7 @@
    "image": "https://cards.scryfall.io/normal/front/9/3/9319c91c-fad3-4840-b3ca-5d3d94eb7ddf.jpg?1783903319",
    "imageLarge": "https://cards.scryfall.io/large/front/9/3/9319c91c-fad3-4840-b3ca-5d3d94eb7ddf.jpg?1783903319",
    "scryfallUrl": "https://scryfall.com/card/mar/53/cyberdrive-awakener?utm_source=api",
-   "tcgPrice": 3.99,
+   "tcgPrice": 4.07,
    "ckPrice": 4.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/cyberdrive-awakener"
   },
@@ -834,7 +834,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/d/cd8c028c-82bb-4d47-a9cb-ed34c25f2599.jpg?1783903319",
    "imageLarge": "https://cards.scryfall.io/large/front/c/d/cd8c028c-82bb-4d47-a9cb-ed34c25f2599.jpg?1783903319",
    "scryfallUrl": "https://scryfall.com/card/mar/55/harbinger-of-the-seas?utm_source=api",
-   "tcgPrice": 2.27,
+   "tcgPrice": 2.26,
    "ckPrice": 2.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/harbinger-of-the-seas"
   },
@@ -864,7 +864,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/7/27bd54ab-5512-4011-a60f-ec2899b34327.jpg?1783903318",
    "imageLarge": "https://cards.scryfall.io/large/front/2/7/27bd54ab-5512-4011-a60f-ec2899b34327.jpg?1783903318",
    "scryfallUrl": "https://scryfall.com/card/mar/57/mechanized-production?utm_source=api",
-   "tcgPrice": 3.85,
+   "tcgPrice": 3.84,
    "ckPrice": 3.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/mechanized-production"
   },
@@ -879,7 +879,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/3/0355887d-eec7-4b1c-ada1-014ac7fce5c6.jpg?1783903318",
    "imageLarge": "https://cards.scryfall.io/large/front/0/3/0355887d-eec7-4b1c-ada1-014ac7fce5c6.jpg?1783903318",
    "scryfallUrl": "https://scryfall.com/card/mar/58/narsets-reversal?utm_source=api",
-   "tcgPrice": 1.82,
+   "tcgPrice": 1.72,
    "ckPrice": 3.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/narsets-reversal-black-panthers-redirection"
   },
@@ -894,7 +894,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/7/875dfbf5-9313-439b-b021-8b92d898baa4.jpg?1783903317",
    "imageLarge": "https://cards.scryfall.io/large/front/8/7/875dfbf5-9313-439b-b021-8b92d898baa4.jpg?1783903317",
    "scryfallUrl": "https://scryfall.com/card/mar/59/reconnaissance-mission?utm_source=api",
-   "tcgPrice": 1.09,
+   "tcgPrice": 1.04,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/reconnaissance-mission"
   },
@@ -909,7 +909,7 @@
    "image": "https://cards.scryfall.io/normal/front/a/e/aee8a17a-de57-4a76-9613-d3c6b161e378.jpg?1783903318",
    "imageLarge": "https://cards.scryfall.io/large/front/a/e/aee8a17a-de57-4a76-9613-d3c6b161e378.jpg?1783903318",
    "scryfallUrl": "https://scryfall.com/card/mar/60/show-and-tell?utm_source=api",
-   "tcgPrice": 2.86,
+   "tcgPrice": 2.81,
    "ckPrice": 5.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/show-and-tell"
   },
@@ -924,7 +924,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/2/c201946b-0746-4f8b-bd7b-84dc0fa60395.jpg?1783903319",
    "imageLarge": "https://cards.scryfall.io/large/front/c/2/c201946b-0746-4f8b-bd7b-84dc0fa60395.jpg?1783903319",
    "scryfallUrl": "https://scryfall.com/card/mar/61/simulacrum-synthesizer?utm_source=api",
-   "tcgPrice": 16.57,
+   "tcgPrice": 16.92,
    "ckPrice": 21.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/simulacrum-synthesizer"
   },
@@ -939,7 +939,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/3/c39be5b1-b693-4b1b-b40b-8bf6d1fe986d.jpg?1783903316",
    "imageLarge": "https://cards.scryfall.io/large/front/c/3/c39be5b1-b693-4b1b-b40b-8bf6d1fe986d.jpg?1783903316",
    "scryfallUrl": "https://scryfall.com/card/mar/62/three-steps-ahead?utm_source=api",
-   "tcgPrice": 4.37,
+   "tcgPrice": 4.34,
    "ckPrice": 7.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/three-steps-ahead"
   },
@@ -954,7 +954,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/e/ee10e249-5000-4348-8e8e-6b9ac879db12.jpg?1783903315",
    "imageLarge": "https://cards.scryfall.io/large/front/e/e/ee10e249-5000-4348-8e8e-6b9ac879db12.jpg?1783903315",
    "scryfallUrl": "https://scryfall.com/card/mar/63/dauthi-voidwalker?utm_source=api",
-   "tcgPrice": 4.36,
+   "tcgPrice": 4.42,
    "ckPrice": 7.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/dauthi-voidwalker-widow-making-infiltrator"
   },
@@ -969,7 +969,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/0/e0f658ff-323e-4e32-beaa-1d5753b4f081.jpg?1783903315",
    "imageLarge": "https://cards.scryfall.io/large/front/e/0/e0f658ff-323e-4e32-beaa-1d5753b4f081.jpg?1783903315",
    "scryfallUrl": "https://scryfall.com/card/mar/64/deadly-dispute?utm_source=api",
-   "tcgPrice": 1.37,
+   "tcgPrice": 1.35,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/deadly-dispute"
   },
@@ -984,7 +984,7 @@
    "image": "https://cards.scryfall.io/normal/front/f/6/f6bcf690-c532-4d2d-8458-78a5613a6090.jpg?1783903314",
    "imageLarge": "https://cards.scryfall.io/large/front/f/6/f6bcf690-c532-4d2d-8458-78a5613a6090.jpg?1783903314",
    "scryfallUrl": "https://scryfall.com/card/mar/65/extinction-event?utm_source=api",
-   "tcgPrice": 2.65,
+   "tcgPrice": 2.59,
    "ckPrice": 2.79,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/extinction-event"
   },
@@ -1014,7 +1014,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/c/7cdd99ba-b96c-4808-89fc-ba675c546779.jpg?1783903315",
    "imageLarge": "https://cards.scryfall.io/large/front/7/c/7cdd99ba-b96c-4808-89fc-ba675c546779.jpg?1783903315",
    "scryfallUrl": "https://scryfall.com/card/mar/67/massacre-girl?utm_source=api",
-   "tcgPrice": 1.26,
+   "tcgPrice": 1.3,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/massacre-girl-elektra-deadly-assassin"
   },
@@ -1029,7 +1029,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/a/8a37de6b-3a92-4a32-a940-e0f303e316c1.jpg?1783903313",
    "imageLarge": "https://cards.scryfall.io/large/front/8/a/8a37de6b-3a92-4a32-a940-e0f303e316c1.jpg?1783903313",
    "scryfallUrl": "https://scryfall.com/card/mar/68/no-mercy?utm_source=api",
-   "tcgPrice": 11.89,
+   "tcgPrice": 11.83,
    "ckPrice": 14.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/no-mercy"
   },
@@ -1044,7 +1044,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/a/2a6c3d3b-93ec-43df-a0cd-ea12ab047d51.jpg?1783903314",
    "imageLarge": "https://cards.scryfall.io/large/front/2/a/2a6c3d3b-93ec-43df-a0cd-ea12ab047d51.jpg?1783903314",
    "scryfallUrl": "https://scryfall.com/card/mar/69/chaos-warp?utm_source=api",
-   "tcgPrice": 4.81,
+   "tcgPrice": 4.66,
    "ckPrice": 6.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/chaos-warp"
   },
@@ -1059,7 +1059,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/1/318eb163-fd1d-47bc-976c-89ffd67ee8d4.jpg?1783903317",
    "imageLarge": "https://cards.scryfall.io/large/front/3/1/318eb163-fd1d-47bc-976c-89ffd67ee8d4.jpg?1783903317",
    "scryfallUrl": "https://scryfall.com/card/mar/70/fiery-emancipation?utm_source=api",
-   "tcgPrice": 7.27,
+   "tcgPrice": 7.08,
    "ckPrice": 10.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/fiery-emancipation"
   },
@@ -1074,7 +1074,7 @@
    "image": "https://cards.scryfall.io/normal/front/5/e/5eaaca68-47e1-49f8-bf2e-c0eaad721e86.jpg?1783903315",
    "imageLarge": "https://cards.scryfall.io/large/front/5/e/5eaaca68-47e1-49f8-bf2e-c0eaad721e86.jpg?1783903315",
    "scryfallUrl": "https://scryfall.com/card/mar/71/fury-of-the-horde?utm_source=api",
-   "tcgPrice": 2.49,
+   "tcgPrice": 2.38,
    "ckPrice": 3.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/fury-of-the-horde"
   },
@@ -1104,7 +1104,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/2/e2449983-c54c-49d8-8289-c591e465527e.jpg?1783903314",
    "imageLarge": "https://cards.scryfall.io/large/front/e/2/e2449983-c54c-49d8-8289-c591e465527e.jpg?1783903314",
    "scryfallUrl": "https://scryfall.com/card/mar/73/seize-the-day?utm_source=api",
-   "tcgPrice": 2.9,
+   "tcgPrice": 2.82,
    "ckPrice": 5.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/seize-the-day"
   },
@@ -1119,7 +1119,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/2/e208d3bc-9a1d-40a5-8ab9-c0cca5d129f5.jpg?1783903313",
    "imageLarge": "https://cards.scryfall.io/large/front/e/2/e208d3bc-9a1d-40a5-8ab9-c0cca5d129f5.jpg?1783903313",
    "scryfallUrl": "https://scryfall.com/card/mar/74/bedlam?utm_source=api",
-   "tcgPrice": 1.36,
+   "tcgPrice": 1.33,
    "ckPrice": 2.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/bedlam"
   },
@@ -1134,7 +1134,7 @@
    "image": "https://cards.scryfall.io/normal/front/b/6/b6b6c66f-e3e0-4904-ae41-2ecc786f70c5.jpg?1783903312",
    "imageLarge": "https://cards.scryfall.io/large/front/b/6/b6b6c66f-e3e0-4904-ae41-2ecc786f70c5.jpg?1783903312",
    "scryfallUrl": "https://scryfall.com/card/mar/75/beast-within?utm_source=api",
-   "tcgPrice": 1.85,
+   "tcgPrice": 1.78,
    "ckPrice": 1.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/beast-within-0075-grimm-fate"
   },
@@ -1149,7 +1149,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/6/66fe10bb-9f05-400b-a8b7-6d6affe8c0f8.jpg?1783903311",
    "imageLarge": "https://cards.scryfall.io/large/front/6/6/66fe10bb-9f05-400b-a8b7-6d6affe8c0f8.jpg?1783903311",
    "scryfallUrl": "https://scryfall.com/card/mar/76/defense-of-the-heart?utm_source=api",
-   "tcgPrice": 9.03,
+   "tcgPrice": 9.44,
    "ckPrice": 11.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/defense-of-the-heart"
   },
@@ -1164,7 +1164,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/5/e507e356-6241-4347-bd56-e0609954f378.jpg?1783903311",
    "imageLarge": "https://cards.scryfall.io/large/front/e/5/e507e356-6241-4347-bd56-e0609954f378.jpg?1783903311",
    "scryfallUrl": "https://scryfall.com/card/mar/77/force-of-vigor?utm_source=api",
-   "tcgPrice": 4.88,
+   "tcgPrice": 4.59,
    "ckPrice": 8.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/force-of-vigor"
   },
@@ -1179,7 +1179,7 @@
    "image": "https://cards.scryfall.io/normal/front/1/2/12edbdcc-085f-48c8-9605-3c7e3fe63bc7.jpg?1783903312",
    "imageLarge": "https://cards.scryfall.io/large/front/1/2/12edbdcc-085f-48c8-9605-3c7e3fe63bc7.jpg?1783903312",
    "scryfallUrl": "https://scryfall.com/card/mar/78/heroic-intervention?utm_source=api",
-   "tcgPrice": 9.74,
+   "tcgPrice": 9.8,
    "ckPrice": 16.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/heroic-intervention-0078"
   },
@@ -1194,7 +1194,7 @@
    "image": "https://cards.scryfall.io/normal/front/a/5/a51d8579-a99c-417b-ba71-7f2204ebea2a.jpg?1783903310",
    "imageLarge": "https://cards.scryfall.io/large/front/a/5/a51d8579-a99c-417b-ba71-7f2204ebea2a.jpg?1783903310",
    "scryfallUrl": "https://scryfall.com/card/mar/79/heroic-intervention?utm_source=api",
-   "tcgPrice": 9.31,
+   "tcgPrice": 9.63,
    "ckPrice": 17.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/heroic-intervention-0079"
   },
@@ -1209,7 +1209,7 @@
    "image": "https://cards.scryfall.io/normal/front/4/2/4208a5fd-4ca9-4648-883e-5dfe02746e68.jpg?1783903309",
    "imageLarge": "https://cards.scryfall.io/large/front/4/2/4208a5fd-4ca9-4648-883e-5dfe02746e68.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/80/heroic-intervention?utm_source=api",
-   "tcgPrice": 9.73,
+   "tcgPrice": 9.82,
    "ckPrice": 16.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/heroic-intervention-0080"
   },
@@ -1224,7 +1224,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/8/38d16f3a-a20f-4e98-8085-e4e09bc525d6.jpg?1783903309",
    "imageLarge": "https://cards.scryfall.io/large/front/3/8/38d16f3a-a20f-4e98-8085-e4e09bc525d6.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/81/primal-vigor?utm_source=api",
-   "tcgPrice": 5.29,
+   "tcgPrice": 5.36,
    "ckPrice": 8.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/primal-vigor"
   },
@@ -1239,7 +1239,7 @@
    "image": "https://cards.scryfall.io/normal/front/3/7/377792bf-2d72-40eb-9e47-1d4a86980fa4.jpg?1783903309",
    "imageLarge": "https://cards.scryfall.io/large/front/3/7/377792bf-2d72-40eb-9e47-1d4a86980fa4.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/82/rancor?utm_source=api",
-   "tcgPrice": 2.43,
+   "tcgPrice": 2.22,
    "ckPrice": 2.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/rancor"
   },
@@ -1254,7 +1254,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/4/c443ee78-6bdc-4a74-9cad-93727b9fdbd6.jpg?1783903312",
    "imageLarge": "https://cards.scryfall.io/large/front/c/4/c443ee78-6bdc-4a74-9cad-93727b9fdbd6.jpg?1783903312",
    "scryfallUrl": "https://scryfall.com/card/mar/83/steely-resolve?utm_source=api",
-   "tcgPrice": 2.29,
+   "tcgPrice": 2.03,
    "ckPrice": 1.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/steely-resolve"
   },
@@ -1269,7 +1269,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/b/6b30090a-17b1-4e4d-a70c-bd232b5b3316.jpg?1783903310",
    "imageLarge": "https://cards.scryfall.io/large/front/6/b/6b30090a-17b1-4e4d-a70c-bd232b5b3316.jpg?1783903310",
    "scryfallUrl": "https://scryfall.com/card/mar/84/unnatural-growth?utm_source=api",
-   "tcgPrice": 2.37,
+   "tcgPrice": 2.32,
    "ckPrice": 3.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/unnatural-growth"
   },
@@ -1301,7 +1301,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/f/ef2efb63-2bc4-4808-9ded-ba93d89dedea.jpg?1783903309",
    "imageLarge": "https://cards.scryfall.io/large/front/e/f/ef2efb63-2bc4-4808-9ded-ba93d89dedea.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/86/aurelia-the-warleader?utm_source=api",
-   "tcgPrice": 2.69,
+   "tcgPrice": 2.72,
    "ckPrice": 6.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/aurelia-the-warleader-monica-the-marvel"
   },
@@ -1317,7 +1317,7 @@
    "image": "https://cards.scryfall.io/normal/front/a/1/a1b11ef2-2285-40eb-b11c-223c159e3d1f.jpg?1783903308",
    "imageLarge": "https://cards.scryfall.io/large/front/a/1/a1b11ef2-2285-40eb-b11c-223c159e3d1f.jpg?1783903308",
    "scryfallUrl": "https://scryfall.com/card/mar/87/black-panther-wakandan-king?utm_source=api",
-   "tcgPrice": 3.05,
+   "tcgPrice": 3.11,
    "ckPrice": 4.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/black-panther-wakandan-king"
   },
@@ -1334,7 +1334,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/6/0669ffcf-30c1-4d90-ae5f-3deca0f82526.jpg?1783903308",
    "imageLarge": "https://cards.scryfall.io/large/front/0/6/0669ffcf-30c1-4d90-ae5f-3deca0f82526.jpg?1783903308",
    "scryfallUrl": "https://scryfall.com/card/mar/88/captain-america-first-avenger?utm_source=api",
-   "tcgPrice": 5.46,
+   "tcgPrice": 5.5,
    "ckPrice": 7.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/captain-america-first-avenger"
   },
@@ -1350,7 +1350,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/2/82267f18-ceff-4f98-bf6f-e0cbf94072d3.jpg?1783903308",
    "imageLarge": "https://cards.scryfall.io/large/front/8/2/82267f18-ceff-4f98-bf6f-e0cbf94072d3.jpg?1783903308",
    "scryfallUrl": "https://scryfall.com/card/mar/89/escape-to-the-wilds?utm_source=api",
-   "tcgPrice": 1.47,
+   "tcgPrice": 1.46,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/escape-to-the-wilds"
   },
@@ -1366,7 +1366,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/e/ee1475d1-4f24-4719-b7a5-c6e3a2a9d63e.jpg?1783903307",
    "imageLarge": "https://cards.scryfall.io/large/front/e/e/ee1475d1-4f24-4719-b7a5-c6e3a2a9d63e.jpg?1783903307",
    "scryfallUrl": "https://scryfall.com/card/mar/90/fight-to-the-death?utm_source=api",
-   "tcgPrice": 1.66,
+   "tcgPrice": 1.7,
    "ckPrice": 1.29,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/fight-to-the-death"
   },
@@ -1382,7 +1382,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/0/20d54b22-62e8-48ac-ba65-0bdbf42d6cad.jpg?1783903309",
    "imageLarge": "https://cards.scryfall.io/large/front/2/0/20d54b22-62e8-48ac-ba65-0bdbf42d6cad.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/91/iron-man-titan-of-innovation?utm_source=api",
-   "tcgPrice": 8.06,
+   "tcgPrice": 8.04,
    "ckPrice": 10.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/iron-man-titan-of-innovation"
   },
@@ -1398,7 +1398,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/5/05961dad-9fe6-409f-8bfd-c6176072e9b1.jpg?1783903306",
    "imageLarge": "https://cards.scryfall.io/large/front/0/5/05961dad-9fe6-409f-8bfd-c6176072e9b1.jpg?1783903306",
    "scryfallUrl": "https://scryfall.com/card/mar/92/privileged-position?utm_source=api",
-   "tcgPrice": 1.7,
+   "tcgPrice": 1.74,
    "ckPrice": 1.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/privileged-position"
   },
@@ -1414,7 +1414,7 @@
    "image": "https://cards.scryfall.io/normal/front/d/2/d20ce47d-f08f-475d-a8c3-8a4ebeb0b4f2.jpg?1783903305",
    "imageLarge": "https://cards.scryfall.io/large/front/d/2/d20ce47d-f08f-475d-a8c3-8a4ebeb0b4f2.jpg?1783903305",
    "scryfallUrl": "https://scryfall.com/card/mar/93/ravenous-tyrannosaurus?utm_source=api",
-   "tcgPrice": 5.15,
+   "tcgPrice": 5.14,
    "ckPrice": 6.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/ravenous-tyrannosaurus"
   },
@@ -1447,7 +1447,7 @@
    "image": "https://cards.scryfall.io/normal/front/2/a/2aa6ff08-efd2-4f51-b899-19ba6815767a.jpg?1783903304",
    "imageLarge": "https://cards.scryfall.io/large/front/2/a/2aa6ff08-efd2-4f51-b899-19ba6815767a.jpg?1783903304",
    "scryfallUrl": "https://scryfall.com/card/mar/95/sundering-growth?utm_source=api",
-   "tcgPrice": 0.98,
+   "tcgPrice": 1.01,
    "ckPrice": 0.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/sundering-growth"
   },
@@ -1463,7 +1463,7 @@
    "image": "https://cards.scryfall.io/normal/front/b/9/b98c57b1-6138-49a2-884a-995828cf4c50.jpg?1783903304",
    "imageLarge": "https://cards.scryfall.io/large/front/b/9/b98c57b1-6138-49a2-884a-995828cf4c50.jpg?1783903304",
    "scryfallUrl": "https://scryfall.com/card/mar/96/warleaders-call?utm_source=api",
-   "tcgPrice": 3.85,
+   "tcgPrice": 3.91,
    "ckPrice": 8.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/warleaders-call"
   },
@@ -1479,7 +1479,7 @@
    "image": "https://cards.scryfall.io/normal/front/9/9/9976c1a8-ef3d-4911-854d-f53394fd709d.jpg?1783903304",
    "imageLarge": "https://cards.scryfall.io/large/front/9/9/9976c1a8-ef3d-4911-854d-f53394fd709d.jpg?1783903304",
    "scryfallUrl": "https://scryfall.com/card/mar/97/wolverine-best-there-is?utm_source=api",
-   "tcgPrice": 15.53,
+   "tcgPrice": 15.45,
    "ckPrice": 15.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/wolverine-best-there-is"
   },
@@ -1492,7 +1492,7 @@
    "image": "https://cards.scryfall.io/normal/front/e/3/e37487e4-c553-4495-a839-6a96209eaaa1.jpg?1783903303",
    "imageLarge": "https://cards.scryfall.io/large/front/e/3/e37487e4-c553-4495-a839-6a96209eaaa1.jpg?1783903303",
    "scryfallUrl": "https://scryfall.com/card/mar/98/horn-of-greed?utm_source=api",
-   "tcgPrice": 7.56,
+   "tcgPrice": 7.29,
    "ckPrice": 7.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/horn-of-greed"
   },
@@ -1505,7 +1505,7 @@
    "image": "https://cards.scryfall.io/normal/front/6/d/6d3c06a5-a0b2-47a2-a583-d579c24a44c9.jpg?1783903305",
    "imageLarge": "https://cards.scryfall.io/large/front/6/d/6d3c06a5-a0b2-47a2-a583-d579c24a44c9.jpg?1783903305",
    "scryfallUrl": "https://scryfall.com/card/mar/99/roaming-throne?utm_source=api",
-   "tcgPrice": 49.26,
+   "tcgPrice": 50.25,
    "ckPrice": 59.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/roaming-throne-doom-variant"
   },
@@ -1518,7 +1518,7 @@
    "image": "https://cards.scryfall.io/normal/front/9/0/908770e0-5927-486a-b99b-64f165da4d90.jpg?1783903304",
    "imageLarge": "https://cards.scryfall.io/large/front/9/0/908770e0-5927-486a-b99b-64f165da4d90.jpg?1783903304",
    "scryfallUrl": "https://scryfall.com/card/mar/100/sword-of-fire-and-ice?utm_source=api",
-   "tcgPrice": 16.54,
+   "tcgPrice": 16.7,
    "ckPrice": 22.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/sword-of-fire-and-ice-patriotic-shield"
   }
