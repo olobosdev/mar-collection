@@ -2,14 +2,19 @@
  "meta": {
   "set": "MAR",
   "source": "cardkingdom",
-  "updatedAt": "2026-11-03T17:49:33+00:00",
-  "count": 100,
-  "withCardKingdomPrice": 100
+  "updatedAt": "2026-11-04T02:11:56+00:00",
+  "count": 115,
+  "withCardKingdomPrice": 115
  },
  "cards": [
   {
    "id": "ec191a2f-12b1-438b-b2fe-f88fb82d9b87",
+   "set": "mar",
    "num": "1",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Comeuppance",
    "setName": "Marvel Universe",
    "colors": [
@@ -24,7 +29,12 @@
   },
   {
    "id": "5d587b65-8c90-41e3-96e0-ecb3bbfb0ac7",
+   "set": "mar",
    "num": "2",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Leyline Binding",
    "setName": "Marvel Universe",
    "colors": [
@@ -39,7 +49,12 @@
   },
   {
    "id": "5a0b9b21-4d7f-4b02-aef1-3598eae2f581",
+   "set": "mar",
    "num": "3",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Nine Lives",
    "setName": "Marvel Universe",
    "colors": [
@@ -54,7 +69,12 @@
   },
   {
    "id": "3dfddf82-4dc7-4749-aa1c-d58cc6858cc0",
+   "set": "mar",
    "num": "4",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Path to Exile",
    "setName": "Marvel Universe",
    "colors": [
@@ -69,7 +89,12 @@
   },
   {
    "id": "2bb8ede7-ca50-4df8-aa30-f1b14520163f",
+   "set": "mar",
    "num": "5",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Reprieve",
    "setName": "Marvel Universe",
    "colors": [
@@ -84,7 +109,12 @@
   },
   {
    "id": "4266ac5c-40dc-4fe3-9f42-e03cea5277ea",
+   "set": "mar",
    "num": "6",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Rest in Peace",
    "setName": "Marvel Universe",
    "colors": [
@@ -99,7 +129,12 @@
   },
   {
    "id": "9a581f34-521c-4d28-96d4-be1e8dbc30b8",
+   "set": "mar",
    "num": "7",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Wedding Ring",
    "setName": "Marvel Universe",
    "colors": [
@@ -114,7 +149,12 @@
   },
   {
    "id": "e23cbf2a-c07b-4202-826d-9b3c4a35a02e",
+   "set": "mar",
    "num": "8",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Clever Impersonator",
    "setName": "Marvel Universe",
    "colors": [
@@ -129,7 +169,12 @@
   },
   {
    "id": "610a7782-ffe4-4b1c-bcc2-b3d89357e3da",
+   "set": "mar",
    "num": "9",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Counterspell",
    "setName": "Marvel Universe",
    "colors": [
@@ -144,7 +189,12 @@
   },
   {
    "id": "deda48c4-527f-4367-83ed-3b3c30beaab8",
+   "set": "mar",
    "num": "10",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Lorthos, the Tidemaker",
    "setName": "Marvel Universe",
    "colors": [
@@ -159,7 +209,12 @@
   },
   {
    "id": "75b75aaf-499d-47b0-ab6d-873240b641b2",
+   "set": "mar",
    "num": "11",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Mindbreak Trap",
    "setName": "Marvel Universe",
    "colors": [
@@ -174,7 +229,12 @@
   },
   {
    "id": "5df07a06-e585-412d-a6db-cb5a78a68b6e",
+   "set": "mar",
    "num": "12",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Mystic Confluence",
    "setName": "Marvel Universe",
    "colors": [
@@ -189,7 +249,12 @@
   },
   {
    "id": "ac1042e0-af4d-42b0-9d43-34b3fa5daf92",
+   "set": "mar",
    "num": "13",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Ponder",
    "setName": "Marvel Universe",
    "colors": [
@@ -204,7 +269,12 @@
   },
   {
    "id": "3b4d51b9-f99e-4253-83d7-4dc6ef9bbe41",
+   "set": "mar",
    "num": "14",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Rite of Replication",
    "setName": "Marvel Universe",
    "colors": [
@@ -219,7 +289,12 @@
   },
   {
    "id": "d7706745-60fd-4fdb-9083-931b05a3e2b1",
+   "set": "mar",
    "num": "15",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Traumatize",
    "setName": "Marvel Universe",
    "colors": [
@@ -234,7 +309,12 @@
   },
   {
    "id": "cf10e116-d1da-4570-be0e-c597a9e75d72",
+   "set": "mar",
    "num": "16",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Feed the Swarm",
    "setName": "Marvel Universe",
    "colors": [
@@ -249,7 +329,12 @@
   },
   {
    "id": "0db3f148-4ede-4134-b2e0-2bb513d9cefc",
+   "set": "mar",
    "num": "17",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Hex",
    "setName": "Marvel Universe",
    "colors": [
@@ -264,7 +349,12 @@
   },
   {
    "id": "82d69044-8d8c-4ae3-853e-de180f4706ca",
+   "set": "mar",
    "num": "18",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Infernal Grasp",
    "setName": "Marvel Universe",
    "colors": [
@@ -279,7 +369,12 @@
   },
   {
    "id": "d7b0a0d5-a9fe-49ea-9250-8825b36accc0",
+   "set": "mar",
    "num": "19",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Opposition Agent",
    "setName": "Marvel Universe",
    "colors": [
@@ -294,7 +389,12 @@
   },
   {
    "id": "3e560cb9-3036-46a2-a5c7-edb04d0095b7",
+   "set": "mar",
    "num": "20",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Reanimate",
    "setName": "Marvel Universe",
    "colors": [
@@ -309,7 +409,12 @@
   },
   {
    "id": "eea57be1-032d-40ec-8091-92f89670e4a1",
+   "set": "mar",
    "num": "21",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Saw in Half",
    "setName": "Marvel Universe",
    "colors": [
@@ -324,7 +429,12 @@
   },
   {
    "id": "c47d09a5-a6d2-4bc2-bf65-b32e3c897c49",
+   "set": "mar",
    "num": "22",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Skithiryx, the Blight Dragon",
    "setName": "Marvel Universe",
    "colors": [
@@ -339,7 +449,12 @@
   },
   {
    "id": "7ebd1f51-2db6-4c3f-95cb-8035a410a8e8",
+   "set": "mar",
    "num": "23",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Goblin Bombardment",
    "setName": "Marvel Universe",
    "colors": [
@@ -354,7 +469,12 @@
   },
   {
    "id": "08eb1bef-b00d-490b-a631-2849e0d1fd8e",
+   "set": "mar",
    "num": "24",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Najeela, the Blade-Blossom",
    "setName": "Marvel Universe",
    "colors": [
@@ -373,7 +493,12 @@
   },
   {
    "id": "e473a591-9aae-4af2-9b25-96820b317df8",
+   "set": "mar",
    "num": "25",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Relentless Assault",
    "setName": "Marvel Universe",
    "colors": [
@@ -388,7 +513,12 @@
   },
   {
    "id": "291ffa45-f395-420f-8862-9a685b65ce69",
+   "set": "mar",
    "num": "26",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Savage Beating",
    "setName": "Marvel Universe",
    "colors": [
@@ -403,7 +533,12 @@
   },
   {
    "id": "8066310c-dcd6-465b-a0ae-44c8602367de",
+   "set": "mar",
    "num": "27",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Shock",
    "setName": "Marvel Universe",
    "colors": [
@@ -418,7 +553,12 @@
   },
   {
    "id": "2f8e351a-ce09-4f7d-8b4e-bcffcab66aa1",
+   "set": "mar",
    "num": "28",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Thrill of Possibility",
    "setName": "Marvel Universe",
    "colors": [
@@ -433,7 +573,12 @@
   },
   {
    "id": "33ba9e5a-d078-4a47-b181-0ca7d1596919",
+   "set": "mar",
    "num": "29",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Unexpected Windfall",
    "setName": "Marvel Universe",
    "colors": [
@@ -448,7 +593,12 @@
   },
   {
    "id": "a6e83b7b-07df-4ff0-8942-8fdb3f1502f9",
+   "set": "mar",
    "num": "30",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Winds of Change",
    "setName": "Marvel Universe",
    "colors": [
@@ -463,7 +613,12 @@
   },
   {
    "id": "77e2f5ac-5c0d-4503-b8ab-fee00eaaa4a3",
+   "set": "mar",
    "num": "31",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Arachnogenesis",
    "setName": "Marvel Universe",
    "colors": [
@@ -478,7 +633,12 @@
   },
   {
    "id": "255544be-db0f-4dcc-8787-f05652cd2684",
+   "set": "mar",
    "num": "32",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Arasta of the Endless Web",
    "setName": "Marvel Universe",
    "colors": [
@@ -493,7 +653,12 @@
   },
   {
    "id": "7f419a04-7a18-4ea4-9581-bbc35bec4f16",
+   "set": "mar",
    "num": "33",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Beast Within",
    "setName": "Marvel Universe",
    "colors": [
@@ -508,7 +673,12 @@
   },
   {
    "id": "5fb701f6-bfad-4b43-9a0f-85496973d849",
+   "set": "mar",
    "num": "34",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Heroic Intervention",
    "setName": "Marvel Universe",
    "colors": [
@@ -518,12 +688,17 @@
    "imageLarge": "https://cards.scryfall.io/large/front/5/f/5fb701f6-bfad-4b43-9a0f-85496973d849.jpg?1783905380",
    "scryfallUrl": "https://scryfall.com/card/mar/34/heroic-intervention?utm_source=api",
    "tcgPrice": 13.31,
-   "ckPrice": 18.99,
+   "ckPrice": 19.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/heroic-intervention-0034"
   },
   {
    "id": "96c20d6f-6272-42f1-bfda-308ce7c4206a",
+   "set": "mar",
    "num": "35",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Hunter's Insight",
    "setName": "Marvel Universe",
    "colors": [
@@ -538,7 +713,12 @@
   },
   {
    "id": "0c9c514f-f506-4b2c-af58-79922834cde7",
+   "set": "mar",
    "num": "36",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Parallel Lives",
    "setName": "Marvel Universe",
    "colors": [
@@ -553,7 +733,12 @@
   },
   {
    "id": "dcc41152-ca20-40d6-82ac-6b7fcd471a42",
+   "set": "mar",
    "num": "37",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Silkguard",
    "setName": "Marvel Universe",
    "colors": [
@@ -568,7 +753,12 @@
   },
   {
    "id": "10c51d68-9a69-4784-9ce1-d6beaafa3ed3",
+   "set": "mar",
    "num": "38",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Tangle",
    "setName": "Marvel Universe",
    "colors": [
@@ -583,7 +773,12 @@
   },
   {
    "id": "5a2f6ccf-af93-4922-973d-6abfeb4d7cfc",
+   "set": "mar",
    "num": "39",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Alibou, Ancient Witness",
    "setName": "Marvel Universe",
    "colors": [
@@ -599,7 +794,12 @@
   },
   {
    "id": "71c9ed41-8832-440d-a455-f52f284e8d14",
+   "set": "mar",
    "num": "40",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Terminate",
    "setName": "Marvel Universe",
    "colors": [
@@ -615,7 +815,12 @@
   },
   {
    "id": "5d393449-bdbe-4638-ba0b-7ec83f81b51e",
+   "set": "mar",
    "num": "41",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Archangel of Thune",
    "setName": "Marvel Universe",
    "colors": [
@@ -630,7 +835,12 @@
   },
   {
    "id": "6b6b0a9f-0373-43c0-9c84-5c2efe902676",
+   "set": "mar",
    "num": "42",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Concerted Effort",
    "setName": "Marvel Universe",
    "colors": [
@@ -645,7 +855,12 @@
   },
   {
    "id": "c55e5f0d-8a4b-4b6f-ab43-1268b6fac74e",
+   "set": "mar",
    "num": "43",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Don't Move",
    "setName": "Marvel Universe",
    "colors": [
@@ -655,12 +870,17 @@
    "imageLarge": "https://cards.scryfall.io/large/front/c/5/c55e5f0d-8a4b-4b6f-ab43-1268b6fac74e.jpg?1783903322",
    "scryfallUrl": "https://scryfall.com/card/mar/43/dont-move?utm_source=api",
    "tcgPrice": 1.85,
-   "ckPrice": 1.79,
+   "ckPrice": 1.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/dont-move"
   },
   {
    "id": "621e3239-b527-4154-bce6-b51241809fc5",
+   "set": "mar",
    "num": "44",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Ephemerate",
    "setName": "Marvel Universe",
    "colors": [
@@ -675,7 +895,12 @@
   },
   {
    "id": "a5abbfdb-0460-4f78-be7f-d3e8a4b3afb5",
+   "set": "mar",
    "num": "45",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Final Showdown",
    "setName": "Marvel Universe",
    "colors": [
@@ -690,7 +915,12 @@
   },
   {
    "id": "f78673f6-8173-4d0e-ae50-539cad30aa5c",
+   "set": "mar",
    "num": "46",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Light of Promise",
    "setName": "Marvel Universe",
    "colors": [
@@ -705,7 +935,12 @@
   },
   {
    "id": "e2e30b25-b710-4566-8b0f-56f6e390a446",
+   "set": "mar",
    "num": "47",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Path to Exile",
    "setName": "Marvel Universe",
    "colors": [
@@ -720,7 +955,12 @@
   },
   {
    "id": "bbc54478-d2f8-4abf-b664-cf014027c0dc",
+   "set": "mar",
    "num": "48",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Return to the Ranks",
    "setName": "Marvel Universe",
    "colors": [
@@ -735,7 +975,12 @@
   },
   {
    "id": "e6a3a9fd-9653-45dd-b592-a36f85af8fc4",
+   "set": "mar",
    "num": "49",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Righteous Fury",
    "setName": "Marvel Universe",
    "colors": [
@@ -750,7 +995,12 @@
   },
   {
    "id": "44398c81-593a-4967-acf2-ec9823a10d33",
+   "set": "mar",
    "num": "50",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Steelshaper's Gift",
    "setName": "Marvel Universe",
    "colors": [
@@ -765,7 +1015,12 @@
   },
   {
    "id": "c54d5ea1-0cc9-4e84-b712-642d55915dae",
+   "set": "mar",
    "num": "51",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Teferi's Protection",
    "setName": "Marvel Universe",
    "colors": [
@@ -780,7 +1035,12 @@
   },
   {
    "id": "379f4020-a58c-484d-9b44-72b200884079",
+   "set": "mar",
    "num": "52",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Counterspell",
    "setName": "Marvel Universe",
    "colors": [
@@ -795,7 +1055,12 @@
   },
   {
    "id": "9319c91c-fad3-4840-b3ca-5d3d94eb7ddf",
+   "set": "mar",
    "num": "53",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Cyberdrive Awakener",
    "setName": "Marvel Universe",
    "colors": [
@@ -810,7 +1075,12 @@
   },
   {
    "id": "87c899c1-401f-4090-8f71-307e7106cdf2",
+   "set": "mar",
    "num": "54",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Dig Through Time",
    "setName": "Marvel Universe",
    "colors": [
@@ -825,7 +1095,12 @@
   },
   {
    "id": "cd8c028c-82bb-4d47-a9cb-ed34c25f2599",
+   "set": "mar",
    "num": "55",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Harbinger of the Seas",
    "setName": "Marvel Universe",
    "colors": [
@@ -840,7 +1115,12 @@
   },
   {
    "id": "2e26f6c6-c043-4b71-ab90-584dceeec092",
+   "set": "mar",
    "num": "56",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Lord of Atlantis",
    "setName": "Marvel Universe",
    "colors": [
@@ -855,7 +1135,12 @@
   },
   {
    "id": "27bd54ab-5512-4011-a60f-ec2899b34327",
+   "set": "mar",
    "num": "57",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Mechanized Production",
    "setName": "Marvel Universe",
    "colors": [
@@ -870,7 +1155,12 @@
   },
   {
    "id": "0355887d-eec7-4b1c-ada1-014ac7fce5c6",
+   "set": "mar",
    "num": "58",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Narset's Reversal",
    "setName": "Marvel Universe",
    "colors": [
@@ -885,7 +1175,12 @@
   },
   {
    "id": "875dfbf5-9313-439b-b021-8b92d898baa4",
+   "set": "mar",
    "num": "59",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Reconnaissance Mission",
    "setName": "Marvel Universe",
    "colors": [
@@ -900,7 +1195,12 @@
   },
   {
    "id": "aee8a17a-de57-4a76-9613-d3c6b161e378",
+   "set": "mar",
    "num": "60",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Show and Tell",
    "setName": "Marvel Universe",
    "colors": [
@@ -915,7 +1215,12 @@
   },
   {
    "id": "c201946b-0746-4f8b-bd7b-84dc0fa60395",
+   "set": "mar",
    "num": "61",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Simulacrum Synthesizer",
    "setName": "Marvel Universe",
    "colors": [
@@ -930,7 +1235,12 @@
   },
   {
    "id": "c39be5b1-b693-4b1b-b40b-8bf6d1fe986d",
+   "set": "mar",
    "num": "62",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Three Steps Ahead",
    "setName": "Marvel Universe",
    "colors": [
@@ -945,7 +1255,12 @@
   },
   {
    "id": "ee10e249-5000-4348-8e8e-6b9ac879db12",
+   "set": "mar",
    "num": "63",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Dauthi Voidwalker",
    "setName": "Marvel Universe",
    "colors": [
@@ -960,7 +1275,12 @@
   },
   {
    "id": "e0f658ff-323e-4e32-beaa-1d5753b4f081",
+   "set": "mar",
    "num": "64",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Deadly Dispute",
    "setName": "Marvel Universe",
    "colors": [
@@ -975,7 +1295,12 @@
   },
   {
    "id": "f6bcf690-c532-4d2d-8458-78a5613a6090",
+   "set": "mar",
    "num": "65",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Extinction Event",
    "setName": "Marvel Universe",
    "colors": [
@@ -990,7 +1315,12 @@
   },
   {
    "id": "c3a474a8-b2f0-4392-9f5d-0f78b3fb29e5",
+   "set": "mar",
    "num": "66",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Final Act",
    "setName": "Marvel Universe",
    "colors": [
@@ -1005,7 +1335,12 @@
   },
   {
    "id": "7cdd99ba-b96c-4808-89fc-ba675c546779",
+   "set": "mar",
    "num": "67",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Massacre Girl",
    "setName": "Marvel Universe",
    "colors": [
@@ -1020,7 +1355,12 @@
   },
   {
    "id": "8a37de6b-3a92-4a32-a940-e0f303e316c1",
+   "set": "mar",
    "num": "68",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "No Mercy",
    "setName": "Marvel Universe",
    "colors": [
@@ -1035,7 +1375,12 @@
   },
   {
    "id": "2a6c3d3b-93ec-43df-a0cd-ea12ab047d51",
+   "set": "mar",
    "num": "69",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Chaos Warp",
    "setName": "Marvel Universe",
    "colors": [
@@ -1050,7 +1395,12 @@
   },
   {
    "id": "318eb163-fd1d-47bc-976c-89ffd67ee8d4",
+   "set": "mar",
    "num": "70",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Fiery Emancipation",
    "setName": "Marvel Universe",
    "colors": [
@@ -1065,7 +1415,12 @@
   },
   {
    "id": "5eaaca68-47e1-49f8-bf2e-c0eaad721e86",
+   "set": "mar",
    "num": "71",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Fury of the Horde",
    "setName": "Marvel Universe",
    "colors": [
@@ -1080,7 +1435,12 @@
   },
   {
    "id": "9ebf25f9-844c-40c6-b0f0-d5c82ee04656",
+   "set": "mar",
    "num": "72",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Monstrous Rage",
    "setName": "Marvel Universe",
    "colors": [
@@ -1095,7 +1455,12 @@
   },
   {
    "id": "e2449983-c54c-49d8-8289-c591e465527e",
+   "set": "mar",
    "num": "73",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Seize the Day",
    "setName": "Marvel Universe",
    "colors": [
@@ -1110,7 +1475,12 @@
   },
   {
    "id": "e208d3bc-9a1d-40a5-8ab9-c0cca5d129f5",
+   "set": "mar",
    "num": "74",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Bedlam",
    "setName": "Marvel Universe",
    "colors": [
@@ -1125,7 +1495,12 @@
   },
   {
    "id": "b6b6c66f-e3e0-4904-ae41-2ecc786f70c5",
+   "set": "mar",
    "num": "75",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Beast Within",
    "setName": "Marvel Universe",
    "colors": [
@@ -1140,7 +1515,12 @@
   },
   {
    "id": "66fe10bb-9f05-400b-a8b7-6d6affe8c0f8",
+   "set": "mar",
    "num": "76",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Defense of the Heart",
    "setName": "Marvel Universe",
    "colors": [
@@ -1155,7 +1535,12 @@
   },
   {
    "id": "e507e356-6241-4347-bd56-e0609954f378",
+   "set": "mar",
    "num": "77",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Force of Vigor",
    "setName": "Marvel Universe",
    "colors": [
@@ -1170,7 +1555,12 @@
   },
   {
    "id": "12edbdcc-085f-48c8-9605-3c7e3fe63bc7",
+   "set": "mar",
    "num": "78",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Heroic Intervention",
    "setName": "Marvel Universe",
    "colors": [
@@ -1185,7 +1575,12 @@
   },
   {
    "id": "a51d8579-a99c-417b-ba71-7f2204ebea2a",
+   "set": "mar",
    "num": "79",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Heroic Intervention",
    "setName": "Marvel Universe",
    "colors": [
@@ -1200,7 +1595,12 @@
   },
   {
    "id": "4208a5fd-4ca9-4648-883e-5dfe02746e68",
+   "set": "mar",
    "num": "80",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Heroic Intervention",
    "setName": "Marvel Universe",
    "colors": [
@@ -1215,7 +1615,12 @@
   },
   {
    "id": "38d16f3a-a20f-4e98-8085-e4e09bc525d6",
+   "set": "mar",
    "num": "81",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Primal Vigor",
    "setName": "Marvel Universe",
    "colors": [
@@ -1230,7 +1635,12 @@
   },
   {
    "id": "377792bf-2d72-40eb-9e47-1d4a86980fa4",
+   "set": "mar",
    "num": "82",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Rancor",
    "setName": "Marvel Universe",
    "colors": [
@@ -1240,12 +1650,17 @@
    "imageLarge": "https://cards.scryfall.io/large/front/3/7/377792bf-2d72-40eb-9e47-1d4a86980fa4.jpg?1783903309",
    "scryfallUrl": "https://scryfall.com/card/mar/82/rancor?utm_source=api",
    "tcgPrice": 2.14,
-   "ckPrice": 2.99,
+   "ckPrice": 3.49,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/rancor"
   },
   {
    "id": "c443ee78-6bdc-4a74-9cad-93727b9fdbd6",
+   "set": "mar",
    "num": "83",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Steely Resolve",
    "setName": "Marvel Universe",
    "colors": [
@@ -1260,7 +1675,12 @@
   },
   {
    "id": "6b30090a-17b1-4e4d-a70c-bd232b5b3316",
+   "set": "mar",
    "num": "84",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Unnatural Growth",
    "setName": "Marvel Universe",
    "colors": [
@@ -1275,7 +1695,12 @@
   },
   {
    "id": "7d2f262a-dc38-4414-8c66-0ef5eac7ad20",
+   "set": "mar",
    "num": "85",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Anthem of Champions",
    "setName": "Marvel Universe",
    "colors": [
@@ -1291,7 +1716,12 @@
   },
   {
    "id": "ef2efb63-2bc4-4808-9ded-ba93d89dedea",
+   "set": "mar",
    "num": "86",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Aurelia, the Warleader",
    "setName": "Marvel Universe",
    "colors": [
@@ -1307,7 +1737,12 @@
   },
   {
    "id": "a1b11ef2-2285-40eb-b11c-223c159e3d1f",
+   "set": "mar",
    "num": "87",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Black Panther, Wakandan King",
    "setName": "Marvel Universe",
    "colors": [
@@ -1323,7 +1758,12 @@
   },
   {
    "id": "0669ffcf-30c1-4d90-ae5f-3deca0f82526",
+   "set": "mar",
    "num": "88",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Captain America, First Avenger",
    "setName": "Marvel Universe",
    "colors": [
@@ -1340,7 +1780,12 @@
   },
   {
    "id": "82267f18-ceff-4f98-bf6f-e0cbf94072d3",
+   "set": "mar",
    "num": "89",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Escape to the Wilds",
    "setName": "Marvel Universe",
    "colors": [
@@ -1356,7 +1801,12 @@
   },
   {
    "id": "ee1475d1-4f24-4719-b7a5-c6e3a2a9d63e",
+   "set": "mar",
    "num": "90",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Fight to the Death",
    "setName": "Marvel Universe",
    "colors": [
@@ -1372,7 +1822,12 @@
   },
   {
    "id": "20d54b22-62e8-48ac-ba65-0bdbf42d6cad",
+   "set": "mar",
    "num": "91",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Iron Man, Titan of Innovation",
    "setName": "Marvel Universe",
    "colors": [
@@ -1388,7 +1843,12 @@
   },
   {
    "id": "05961dad-9fe6-409f-8bfd-c6176072e9b1",
+   "set": "mar",
    "num": "92",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Privileged Position",
    "setName": "Marvel Universe",
    "colors": [
@@ -1404,7 +1864,12 @@
   },
   {
    "id": "d20ce47d-f08f-475d-a8c3-8a4ebeb0b4f2",
+   "set": "mar",
    "num": "93",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Ravenous Tyrannosaurus",
    "setName": "Marvel Universe",
    "colors": [
@@ -1420,7 +1885,12 @@
   },
   {
    "id": "08cd4665-9fc3-48f1-a136-41d4585b1bb4",
+   "set": "mar",
    "num": "94",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Storm, Force of Nature",
    "setName": "Marvel Universe",
    "colors": [
@@ -1437,7 +1907,12 @@
   },
   {
    "id": "2aa6ff08-efd2-4f51-b899-19ba6815767a",
+   "set": "mar",
    "num": "95",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Sundering Growth",
    "setName": "Marvel Universe",
    "colors": [
@@ -1453,7 +1928,12 @@
   },
   {
    "id": "b98c57b1-6138-49a2-884a-995828cf4c50",
+   "set": "mar",
    "num": "96",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Warleader's Call",
    "setName": "Marvel Universe",
    "colors": [
@@ -1469,7 +1949,12 @@
   },
   {
    "id": "9976c1a8-ef3d-4911-854d-f53394fd709d",
+   "set": "mar",
    "num": "97",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Wolverine, Best There Is",
    "setName": "Marvel Universe",
    "colors": [
@@ -1485,7 +1970,12 @@
   },
   {
    "id": "e37487e4-c553-4495-a839-6a96209eaaa1",
+   "set": "mar",
    "num": "98",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Horn of Greed",
    "setName": "Marvel Universe",
    "colors": [],
@@ -1498,7 +1988,12 @@
   },
   {
    "id": "6d3c06a5-a0b2-47a2-a583-d579c24a44c9",
+   "set": "mar",
    "num": "99",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Roaming Throne",
    "setName": "Marvel Universe",
    "colors": [],
@@ -1511,7 +2006,12 @@
   },
   {
    "id": "908770e0-5927-486a-b99b-64f165da4d90",
+   "set": "mar",
    "num": "100",
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
    "name": "Sword of Fire and Ice",
    "setName": "Marvel Universe",
    "colors": [],
@@ -1521,6 +2021,304 @@
    "tcgPrice": 16.94,
    "ckPrice": 23.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/sword-of-fire-and-ice-patriotic-shield"
+  },
+  {
+   "id": "7ffdca9d-3ee4-4572-b1ad-4f03523968fd",
+   "set": "msh",
+   "num": "387",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Captain America, Super-Soldier",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/7/f/7ffdca9d-3ee4-4572-b1ad-4f03523968fd.jpg?1783902840",
+   "imageLarge": "https://cards.scryfall.io/large/front/7/f/7ffdca9d-3ee4-4572-b1ad-4f03523968fd.jpg?1783902840",
+   "scryfallUrl": "https://scryfall.com/card/msh/387/captain-america-super-soldier?utm_source=api",
+   "tcgPrice": 52.76,
+   "ckPrice": 54.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/captain-america-super-soldier-0387-borderless-foil"
+  },
+  {
+   "id": "b51282a9-1132-4c93-a216-148d1e7bb007",
+   "set": "msh",
+   "num": "388",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Jennifer Walters // The Sensational She-Hulk",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "G",
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/b/5/b51282a9-1132-4c93-a216-148d1e7bb007.jpg?1783902843",
+   "imageLarge": "https://cards.scryfall.io/large/front/b/5/b51282a9-1132-4c93-a216-148d1e7bb007.jpg?1783902843",
+   "scryfallUrl": "https://scryfall.com/card/msh/388/jennifer-walters-the-sensational-she-hulk?utm_source=api",
+   "tcgPrice": 39.65,
+   "ckPrice": 49.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/jennifer-walters-0388-borderless-foil"
+  },
+  {
+   "id": "89f7008c-762b-45c3-8ddb-d02ce1b37ebc",
+   "set": "msh",
+   "num": "389",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Nick Fury, Agent of S.H.I.E.L.D.",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "B",
+    "G",
+    "R",
+    "U",
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/8/9/89f7008c-762b-45c3-8ddb-d02ce1b37ebc.jpg?1783902839",
+   "imageLarge": "https://cards.scryfall.io/large/front/8/9/89f7008c-762b-45c3-8ddb-d02ce1b37ebc.jpg?1783902839",
+   "scryfallUrl": "https://scryfall.com/card/msh/389/nick-fury-agent-of-shield?utm_source=api",
+   "tcgPrice": 28.17,
+   "ckPrice": 32.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/nick-fury-agent-of-shield-0389-borderless-foil"
+  },
+  {
+   "id": "481166c5-6a16-469c-91bd-abf291b5db49",
+   "set": "msh",
+   "num": "390",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Bruce Banner // The Incredible Hulk",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "G",
+    "R",
+    "U"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/4/8/481166c5-6a16-469c-91bd-abf291b5db49.jpg?1783902844",
+   "imageLarge": "https://cards.scryfall.io/large/front/4/8/481166c5-6a16-469c-91bd-abf291b5db49.jpg?1783902844",
+   "scryfallUrl": "https://scryfall.com/card/msh/390/bruce-banner-the-incredible-hulk?utm_source=api",
+   "tcgPrice": 43.87,
+   "ckPrice": 54.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/bruce-banner-0390-borderless-foil"
+  },
+  {
+   "id": "47016620-48c7-42b2-9bef-8e2f8fc0786e",
+   "set": "msh",
+   "num": "391",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Namor the Sub-Mariner",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "U"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/4/7/47016620-48c7-42b2-9bef-8e2f8fc0786e.jpg?1783902839",
+   "imageLarge": "https://cards.scryfall.io/large/front/4/7/47016620-48c7-42b2-9bef-8e2f8fc0786e.jpg?1783902839",
+   "scryfallUrl": "https://scryfall.com/card/msh/391/namor-the-sub-mariner?utm_source=api",
+   "tcgPrice": 37.31,
+   "ckPrice": 39.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/namor-the-sub-mariner-0391-borderless-foil"
+  },
+  {
+   "id": "81eaf2ee-edeb-4026-81bb-8766ffa61f0d",
+   "set": "msh",
+   "num": "392",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Tony Stark // The Invincible Iron Man",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "R",
+    "U"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/8/1/81eaf2ee-edeb-4026-81bb-8766ffa61f0d.jpg?1783902843",
+   "imageLarge": "https://cards.scryfall.io/large/front/8/1/81eaf2ee-edeb-4026-81bb-8766ffa61f0d.jpg?1783902843",
+   "scryfallUrl": "https://scryfall.com/card/msh/392/tony-stark-the-invincible-iron-man?utm_source=api",
+   "tcgPrice": 54.29,
+   "ckPrice": 69.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/tony-stark-0392-borderless-foil"
+  },
+  {
+   "id": "8e3c4b2a-4ef7-41ea-a4b5-b0cc942a9889",
+   "set": "msh",
+   "num": "393",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Black Widow, Super Spy",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "B"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/8/e/8e3c4b2a-4ef7-41ea-a4b5-b0cc942a9889.jpg?1783902838",
+   "imageLarge": "https://cards.scryfall.io/large/front/8/e/8e3c4b2a-4ef7-41ea-a4b5-b0cc942a9889.jpg?1783902838",
+   "scryfallUrl": "https://scryfall.com/card/msh/393/black-widow-super-spy?utm_source=api",
+   "tcgPrice": 24.3,
+   "ckPrice": 24.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/black-widow-super-spy-0393-borderless-foil"
+  },
+  {
+   "id": "06255e9e-5395-41ed-ad89-1e7b2b5478d3",
+   "set": "msh",
+   "num": "394",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Doctor Doom",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "B"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/0/6/06255e9e-5395-41ed-ad89-1e7b2b5478d3.jpg?1783902838",
+   "imageLarge": "https://cards.scryfall.io/large/front/0/6/06255e9e-5395-41ed-ad89-1e7b2b5478d3.jpg?1783902838",
+   "scryfallUrl": "https://scryfall.com/card/msh/394/doctor-doom?utm_source=api",
+   "tcgPrice": 154.05,
+   "ckPrice": 159.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/doctor-doom-0394-borderless-foil"
+  },
+  {
+   "id": "0c58b938-f856-4828-9d75-2e4db4547df7",
+   "set": "msh",
+   "num": "395",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Elektra, Daughter of the Hand",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "B"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/0/c/0c58b938-f856-4828-9d75-2e4db4547df7.jpg?1783902837",
+   "imageLarge": "https://cards.scryfall.io/large/front/0/c/0c58b938-f856-4828-9d75-2e4db4547df7.jpg?1783902837",
+   "scryfallUrl": "https://scryfall.com/card/msh/395/elektra-daughter-of-the-hand?utm_source=api",
+   "tcgPrice": 21.32,
+   "ckPrice": 22.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/elektra-daughter-of-the-hand-0395-borderless-foil"
+  },
+  {
+   "id": "b367d034-ae08-4b08-b090-39a6d4f79dc2",
+   "set": "msh",
+   "num": "396",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Shang-Chi, Master of Kung Fu",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "G"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/b/3/b367d034-ae08-4b08-b090-39a6d4f79dc2.jpg?1783902836",
+   "imageLarge": "https://cards.scryfall.io/large/front/b/3/b367d034-ae08-4b08-b090-39a6d4f79dc2.jpg?1783902836",
+   "scryfallUrl": "https://scryfall.com/card/msh/396/shang-chi-master-of-kung-fu?utm_source=api",
+   "tcgPrice": 74.97,
+   "ckPrice": 89.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/shang-chi-master-of-kung-fu-0396-borderless-foil"
+  },
+  {
+   "id": "15850911-bfeb-4e9e-aec9-34a22faac896",
+   "set": "msh",
+   "num": "397",
+   "finishes": [
+    "foil"
+   ],
+   "name": "The Astonishing Ant-Man",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "G",
+    "U"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/1/5/15850911-bfeb-4e9e-aec9-34a22faac896.jpg?1783902837",
+   "imageLarge": "https://cards.scryfall.io/large/front/1/5/15850911-bfeb-4e9e-aec9-34a22faac896.jpg?1783902837",
+   "scryfallUrl": "https://scryfall.com/card/msh/397/the-astonishing-ant-man?utm_source=api",
+   "tcgPrice": 38.95,
+   "ckPrice": 39.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/the-astonishing-ant-man-0397-borderless-foil"
+  },
+  {
+   "id": "21610bae-7e18-42fe-8cdc-dacbf7f9c07f",
+   "set": "msh",
+   "num": "398",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Daredevil, Man Without Fear",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "R",
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/2/1/21610bae-7e18-42fe-8cdc-dacbf7f9c07f.jpg?1783902836",
+   "imageLarge": "https://cards.scryfall.io/large/front/2/1/21610bae-7e18-42fe-8cdc-dacbf7f9c07f.jpg?1783902836",
+   "scryfallUrl": "https://scryfall.com/card/msh/398/daredevil-man-without-fear?utm_source=api",
+   "tcgPrice": 31.31,
+   "ckPrice": 34.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/daredevil-man-without-fear-0398-borderless-foil"
+  },
+  {
+   "id": "d1d8391c-dacc-4f21-a40e-5ca53a787f0d",
+   "set": "msh",
+   "num": "399",
+   "finishes": [
+    "foil"
+   ],
+   "name": "King T'Challa // Black Panther, Hope Enduring",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "U",
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/d/1/d1d8391c-dacc-4f21-a40e-5ca53a787f0d.jpg?1783902841",
+   "imageLarge": "https://cards.scryfall.io/large/front/d/1/d1d8391c-dacc-4f21-a40e-5ca53a787f0d.jpg?1783902841",
+   "scryfallUrl": "https://scryfall.com/card/msh/399/king-tchalla-black-panther-hope-enduring?utm_source=api",
+   "tcgPrice": 45.7,
+   "ckPrice": 49.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/king-tchalla-0399-borderless-foil"
+  },
+  {
+   "id": "c2cdcd6d-15ee-46be-b90e-b0f5d2c5de87",
+   "set": "msh",
+   "num": "400",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Thanos, the Mad Titan",
+   "setName": "Marvel Super Heroes",
+   "colors": [
+    "B",
+    "G",
+    "R",
+    "U",
+    "W"
+   ],
+   "image": "https://cards.scryfall.io/normal/front/c/2/c2cdcd6d-15ee-46be-b90e-b0f5d2c5de87.jpg?1783902835",
+   "imageLarge": "https://cards.scryfall.io/large/front/c/2/c2cdcd6d-15ee-46be-b90e-b0f5d2c5de87.jpg?1783902835",
+   "scryfallUrl": "https://scryfall.com/card/msh/400/thanos-the-mad-titan?utm_source=api",
+   "tcgPrice": 157.1,
+   "ckPrice": 179.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/thanos-the-mad-titan-0400-borderless-foil"
+  },
+  {
+   "id": "df9302a8-e918-429c-8853-133c489223f1",
+   "set": "msh",
+   "num": "401",
+   "finishes": [
+    "foil"
+   ],
+   "name": "Ultron, Artificial Malevolence",
+   "setName": "Marvel Super Heroes",
+   "colors": [],
+   "image": "https://cards.scryfall.io/normal/front/d/f/df9302a8-e918-429c-8853-133c489223f1.jpg?1783902834",
+   "imageLarge": "https://cards.scryfall.io/large/front/d/f/df9302a8-e918-429c-8853-133c489223f1.jpg?1783902834",
+   "scryfallUrl": "https://scryfall.com/card/msh/401/ultron-artificial-malevolence?utm_source=api",
+   "tcgPrice": 73.38,
+   "ckPrice": 84.99,
+   "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/ultron-artificial-malevolence-0401-borderless-foil"
   }
  ]
 }
