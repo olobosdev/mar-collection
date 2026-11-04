@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Genera data/cards.json con las cartas de Marvel Universe (MAR) y su precio en Card Kingdom.
+Genera data/cards.json con las cartas de Marvel Universe (MAR), las Borderless Classic Comic
+de Marvel Super Heroes (MSH #387–401) y su precio en Card Kingdom.
+Precio normal (no foil); para cartas que solo existen en foil se usa el precio foil.
 
 Fuentes:
   1. Scryfall  -> lista de cartas, imágenes, número, colores y precio TCGplayer (respaldo).
@@ -14,15 +16,20 @@ import lzma
 import os
 import sys
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
 SET_CODE = "mar"
+# Secciones adicionales: cartas de otros sets por rango de número de coleccionista
+EXTRA_SETS = [
+    {"set": "msh", "from": 387, "to": 401},  # Borderless Classic Comic (solo foil)
+]
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "cards.json")
 UA = "MarCollectionTracker/1.0 (+https://github.com)"
 
 CK_PRICELIST = "https://api.cardkingdom.com/api/v2/pricelist"
-MTGJSON_SET = f"https://mtgjson.com/api/v5/{SET_CODE.upper()}.json"
+MTGJSON_SET = "https://mtgjson.com/api/v5/{code}.json"
 MTGJSON_PRICES = "https://mtgjson.com/api/v5/AllPricesToday.json.xz"
 
 
@@ -39,7 +46,21 @@ def log(*a):
 
 # ---------------------------------------------------------------- Scryfall
 def scryfall_cards():
-    url = f"https://api.scryfall.com/cards/search?q=set%3A{SET_CODE}&unique=prints&order=set"
+    cards = scryfall_search(f"set:{SET_CODE}")
+    for x in EXTRA_SETS:
+        extra = scryfall_search(f"set:{x['set']} cn>={x['from']} cn<={x['to']}")
+        cards += [c for c in extra if c["num"].isdigit() and x["from"] <= int(c["num"]) <= x["to"]]
+    log(f"Scryfall: {len(cards)} cartas")
+    return cards
+
+
+def foil_only(c):
+    return "nonfoil" not in (c.get("finishes") or ["nonfoil"])
+
+
+def scryfall_search(query):
+    url = "https://api.scryfall.com/cards/search?" + urllib.parse.urlencode(
+        {"q": query, "unique": "prints", "order": "set"})
     cards = []
     while url:
         j = get(url)
@@ -50,7 +71,9 @@ def scryfall_cards():
             tcg = prices.get("usd") or prices.get("usd_foil")
             cards.append({
                 "id": c["id"],
+                "set": c["set"],
                 "num": c["collector_number"],
+                "finishes": c.get("finishes", []),
                 "name": c["name"],
                 "setName": c.get("set_name", "Marvel Universe"),
                 "colors": c.get("color_identity", []),
@@ -63,7 +86,6 @@ def scryfall_cards():
             })
         url = j.get("next_page") if j.get("has_more") else None
         time.sleep(0.12)
-    log(f"Scryfall: {len(cards)} cartas")
     return cards
 
 
@@ -79,8 +101,9 @@ def apply_ck_pricelist(cards):
     by_sid = {}
     for r in rows:
         sid = r.get("scryfall_id")
-        if not sid or is_true(r.get("is_foil")):
+        if not sid:
             continue
+        sid = (sid, is_true(r.get("is_foil")))
         try:
             price = float(r.get("price_retail") or 0)
         except ValueError:
@@ -95,7 +118,7 @@ def apply_ck_pricelist(cards):
             by_sid[sid] = {"price": price, "url": url or None}
     hits = 0
     for c in cards:
-        m = by_sid.get(c["id"])
+        m = by_sid.get((c["id"], foil_only(c)))
         if m:
             c["ckPrice"], c["ckUrl"] = m["price"], m["url"]
             hits += 1
@@ -105,13 +128,15 @@ def apply_ck_pricelist(cards):
 
 def apply_mtgjson(cards):
     """Respaldo: precio CK desde MTGJSON (AllPricesToday) cruzando por scryfallId."""
-    s = get(MTGJSON_SET, timeout=300)
     uuid_by_sid, ck_url_by_sid = {}, {}
-    for card in s["data"]["cards"]:
-        sid = card.get("identifiers", {}).get("scryfallId")
-        if sid:
-            uuid_by_sid[sid] = card["uuid"]
-            ck_url_by_sid[sid] = (card.get("purchaseUrls") or {}).get("cardKingdom")
+    for code in sorted({c["set"] for c in cards}):
+        s = get(MTGJSON_SET.format(code=code.upper()), timeout=300)
+        for card in s["data"]["cards"]:
+            sid = card.get("identifiers", {}).get("scryfallId")
+            if sid:
+                uuid_by_sid[sid] = card["uuid"]
+                purchase = card.get("purchaseUrls") or {}
+                ck_url_by_sid[sid] = purchase.get("cardKingdomFoil") if foil_only({"finishes": card.get("finishes")}) else purchase.get("cardKingdom")
     raw = get(MTGJSON_PRICES, raw=True, timeout=600)
     prices = json.loads(lzma.decompress(raw))["data"]
     hits = 0
@@ -120,9 +145,9 @@ def apply_mtgjson(cards):
         if not uuid or c["ckPrice"] is not None:
             continue
         retail = (((prices.get(uuid) or {}).get("paper") or {}).get("cardkingdom") or {}).get("retail") or {}
-        normal = retail.get("normal") or {}
-        if normal:
-            latest = normal[max(normal)]
+        series = retail.get("foil" if foil_only(c) else "normal") or {}
+        if series:
+            latest = series[max(series)]
             c["ckPrice"] = float(latest)
             c["ckUrl"] = c["ckUrl"] or ck_url_by_sid.get(c["id"])
             hits += 1

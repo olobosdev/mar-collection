@@ -3,6 +3,9 @@
 Web para llevar la colección de las 100 cartas full art de **Marvel Universe (MAR)**:
 1–40 vienen en sobres de *Marvel's Spider-Man* y 41–100 en sobres de *Marvel Super Heroes*.
 
+Incluye además una sección con las 15 **Borderless Classic Comic** de *Marvel Super Heroes*
+(MSH #387–401). Solo existen en foil y vienen en Collector Boosters, por eso su precio es el foil.
+
 - Imagen, edición, número, precio **Card Kingdom** (normal) y enlaces a Moxfield, Card Kingdom y Scryfall.
 - Check "la tengo / no la tengo", barra de progreso y valor de lo que tienes, de lo que te falta y del set completo.
 - Filtros (tengo / faltan, origen, color), buscador y orden por número, nombre o precio.
@@ -60,6 +63,8 @@ El token queda guardado solo en el navegador de cada dispositivo; nunca se sube 
 
 - La tarea diaria toma el precio **normal (no foil)** de la lista de precios pública de Card Kingdom, cruzando por el ID de Scryfall. Si una variante tiene varias filas, usa la más barata.
 - Si esa lista falla, usa como respaldo los precios de Card Kingdom publicados por MTGJSON.
+- Las Classic Comic (MSH #387–401) usan el precio foil, porque no existen en versión normal.
+- Para agregar otra sección de otro set, añade una entrada en `EXTRA_SETS` (script) y en `extraSets` y `SECTIONS` (`index.html`).
 - Si una carta no tiene precio en Card Kingdom ese día, se mantiene el último precio conocido; si nunca lo tuvo, se muestra TCGplayer marcado como **TCG**.
 - Para cambiar la hora de ejecución, edita el `cron` en `.github/workflows/update-prices.yml` (está en UTC).
 

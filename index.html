@@ -107,6 +107,7 @@
   .stat .k { font-size: 12px; color: var(--muted); }
   .stat .v { font-size: 18px; font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .stat.owned .v { color: var(--owned); }
+  @media (max-width: 480px) { .stat { padding: 8px 10px; } .stat .v { font-size: 15px; letter-spacing: -.02em; } }
 
   /* ---------- Controles ---------- */
   .controls { display: grid; gap: 8px; margin-bottom: 14px; }
@@ -228,7 +229,7 @@
   <section class="stats" aria-label="Resumen de valor">
     <div class="stat owned"><div class="k">Tengo</div><div class="v" id="valOwned">–</div></div>
     <div class="stat"><div class="k">Me faltan</div><div class="v" id="valMissing">–</div></div>
-    <div class="stat"><div class="k">Set completo</div><div class="v" id="valTotal">–</div></div>
+    <div class="stat"><div class="k">Todo</div><div class="v" id="valTotal">–</div></div>
   </section>
 
   <section class="controls" aria-label="Filtros">
@@ -240,9 +241,10 @@
         <button data-v="missing" aria-pressed="false">Faltan</button>
       </div>
       <div class="seg" id="fOrigin">
-        <button data-v="all" aria-pressed="true">Ambas</button>
+        <button data-v="all" aria-pressed="true">Todas</button>
         <button data-v="spm" aria-pressed="false">Spider-Man</button>
         <button data-v="msh" aria-pressed="false">Super Heroes</button>
+        <button data-v="classic" aria-pressed="false">Cómic</button>
       </div>
     </div>
     <div class="row">
@@ -309,6 +311,10 @@
    ========================================================= */
 const CONFIG = {
   setCode: 'mar',
+  // Secciones adicionales: cartas de otros sets, por rango de número de coleccionista
+  extraSets: [
+    { set: 'msh', from: 387, to: 401, section: 'classic' }, // Borderless Classic Comic (solo foil, Collector Boosters)
+  ],
   // Enlace a Moxfield por carta. Moxfield no expone un ID derivable desde Scryfall,
   // por eso se usa su búsqueda por nombre. Ajusta la plantilla si prefieres otra ruta.
   moxfieldCardUrl: (c) => `https://moxfield.com/search?q=${encodeURIComponent(c.name)}`,
@@ -340,7 +346,8 @@ function toast(msg) {
 
 /* =========================================================
    Estado
-   collection.owned = { "<número>": { v: true|false, t: timestamp } }
+   collection.owned = { "<clave>": { v: true|false, t: timestamp } }
+   Clave: el número para MAR ("1".."100") y "set-número" para otros sets ("msh-392").
    Se guarda la marca de tiempo por carta para fusionar sin perder cambios.
    ========================================================= */
 let cards = [];
@@ -348,7 +355,10 @@ let pricesMeta = null;
 let collection = store.get(CONFIG.storageKey, { owned: {}, updatedAt: 0 });
 const filters = { q: '', owned: 'all', origin: 'all', colors: new Set(), sort: 'num' };
 
-const isOwned = (num) => !!collection.owned[num]?.v;
+const isOwned = (key) => !!collection.owned[key]?.v;
+const setOf = (c) => (c.set || CONFIG.setCode).toLowerCase();
+const keyOf = (c) => (setOf(c) === CONFIG.setCode ? String(c.num) : `${setOf(c)}-${c.num}`);
+const isFoilOnly = (c) => Array.isArray(c.finishes) && !c.finishes.includes('nonfoil');
 
 function setOwned(num, value) {
   collection.owned[num] = { v: value, t: Date.now() };
@@ -369,9 +379,11 @@ function normalizeScryfall(c) {
   const colors = c.color_identity || [];
   return {
     id: c.id,
+    set: c.set,
     num: c.collector_number,
     name: c.name,
     setName: c.set_name,
+    finishes: c.finishes || [],
     colors,
     image: img.normal || img.large || '',
     imageLarge: img.large || img.png || img.normal || '',
@@ -382,8 +394,8 @@ function normalizeScryfall(c) {
   };
 }
 
-async function fetchFromScryfall() {
-  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent('set:' + CONFIG.setCode)}&unique=prints&order=set`;
+async function scryfallSearch(q) {
+  let url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(q)}&unique=prints&order=set`;
   const out = [];
   while (url) {
     const r = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -392,6 +404,16 @@ async function fetchFromScryfall() {
     out.push(...j.data.map(normalizeScryfall));
     url = j.has_more ? j.next_page : null;
     if (url) await new Promise((res) => setTimeout(res, 120)); // respetar el límite de Scryfall
+  }
+  return out;
+}
+
+async function fetchFromScryfall() {
+  const out = await scryfallSearch('set:' + CONFIG.setCode);
+  for (const x of CONFIG.extraSets) {
+    await new Promise((res) => setTimeout(res, 120));
+    const extra = await scryfallSearch(`set:${x.set} cn>=${x.from} cn<=${x.to}`);
+    out.push(...extra.filter((c) => +c.num >= x.from && +c.num <= x.to));
   }
   return { cards: out, meta: { source: 'scryfall-live', updatedAt: new Date().toISOString() } };
 }
@@ -413,6 +435,19 @@ async function loadCards() {
     }
   }
   if (!data) { $('#grid').innerHTML = '<div class="empty">No se pudieron cargar las cartas. Revisa tu conexión.</div>'; return; }
+  // Si data/cards.json aún no trae alguna sección adicional, se completa desde Scryfall en vivo
+  for (const x of CONFIG.extraSets) {
+    const has = data.cards.some((c) => (c.set || CONFIG.setCode) === x.set && +c.num >= x.from && +c.num <= x.to);
+    if (has) continue;
+    try {
+      const extra = await scryfallSearch(`set:${x.set} cn>=${x.from} cn<=${x.to}`);
+      data.cards.push(...extra.filter((c) => +c.num >= x.from && +c.num <= x.to));
+    } catch {
+      const cached = store.get(CONFIG.cardsCacheKey, null);
+      const old = (cached?.cards || []).filter((c) => c.set === x.set && +c.num >= x.from && +c.num <= x.to);
+      data.cards.push(...old);
+    }
+  }
   store.set(CONFIG.cardsCacheKey, data);
   cards = data.cards.slice().sort((a, b) => parseInt(a.num) - parseInt(b.num) || String(a.num).localeCompare(String(b.num)));
   pricesMeta = data.meta;
@@ -427,8 +462,14 @@ function showNotice(msg) { $('#notice').innerHTML = `<div class="notice">${esc(m
 /* =========================================================
    Cálculos y filtros
    ========================================================= */
-const origin = (c) => (parseInt(c.num) <= 40 ? 'spm' : 'msh');
-const originLabel = (c) => (origin(c) === 'spm' ? 'Spider-Man' : 'Super Heroes');
+function origin(c) {
+  const s = setOf(c);
+  if (s !== CONFIG.setCode) {
+    const x = CONFIG.extraSets.find((e) => e.set === s && +c.num >= e.from && +c.num <= e.to);
+    return x ? x.section : 'other';
+  }
+  return parseInt(c.num) <= 40 ? 'spm' : 'msh';
+}
 const priceOf = (c) => (c.ckPrice != null ? c.ckPrice : c.tcgPrice);
 function colorKey(c) {
   const ci = c.colors || [];
@@ -441,8 +482,8 @@ function filtered() {
   const q = filters.q.trim().toLowerCase();
   let list = cards.filter((c) => {
     if (q && !(c.name.toLowerCase().includes(q) || String(c.num) === q.replace('#', ''))) return false;
-    if (filters.owned === 'owned' && !isOwned(c.num)) return false;
-    if (filters.owned === 'missing' && isOwned(c.num)) return false;
+    if (filters.owned === 'owned' && !isOwned(keyOf(c))) return false;
+    if (filters.owned === 'missing' && isOwned(keyOf(c))) return false;
     if (filters.origin !== 'all' && origin(c) !== filters.origin) return false;
     if (filters.colors.size && !filters.colors.has(colorKey(c))) return false;
     return true;
@@ -460,26 +501,27 @@ function filtered() {
    Render
    ========================================================= */
 function cardHTML(c) {
-  const owned = isOwned(c.num);
+  const key = keyOf(c);
+  const owned = isOwned(key);
   const price = priceOf(c);
   const fallback = c.ckPrice == null && c.tcgPrice != null;
   const ckLink = c.ckUrl || CONFIG.cardKingdomSearchUrl(c);
   return `
-  <article class="card ${owned ? 'is-owned' : ''}" data-num="${esc(c.num)}">
+  <article class="card ${owned ? 'is-owned' : ''}" data-key="${esc(key)}">
     <button class="thumb" data-zoom="${esc(c.imageLarge || c.image)}" aria-label="Ver ${esc(c.name)} en grande">
       ${c.image ? `<img loading="lazy" decoding="async" src="${esc(c.image)}" alt="${esc(c.name)}">` : ''}
       <span class="num">#${esc(c.num)}</span>
     </button>
     <div class="body">
       <h3 class="name">${esc(c.name)}</h3>
-      <div class="meta">${esc(c.setName || 'Marvel Universe')} (MAR)</div>
+      <div class="meta">${esc(c.setName || 'Marvel Universe')} (${esc(setOf(c).toUpperCase())})${isFoilOnly(c) ? ' · Foil' : ''}</div>
       <div class="price ${fallback ? 'fallback' : ''}">${usd(price)}<span class="src">${price == null ? '' : fallback ? 'TCG' : 'CK'}</span></div>
       <div class="links">
         <a href="${esc(CONFIG.moxfieldCardUrl(c))}" target="_blank" rel="noopener">Moxfield</a>
         <a href="${esc(ckLink)}" target="_blank" rel="noopener" title="Card Kingdom">CK</a>
         ${c.scryfallUrl ? `<a href="${esc(c.scryfallUrl)}" target="_blank" rel="noopener">Scryfall</a>` : ''}
       </div>
-      <button class="toggle" data-toggle="${esc(c.num)}" aria-pressed="${owned}">${owned ? '✓ La tengo' : 'No la tengo'}</button>
+      <button class="toggle" data-toggle="${esc(key)}" aria-pressed="${owned}">${owned ? '✓ La tengo' : 'No la tengo'}</button>
     </div>
   </article>`;
 }
@@ -490,7 +532,7 @@ function renderStats() {
   for (const c of cards) {
     const p = priceOf(c) || 0;
     vTotal += p;
-    if (isOwned(c.num)) { have++; vOwned += p; } else vMissing += p;
+    if (isOwned(keyOf(c))) { have++; vOwned += p; } else vMissing += p;
   }
   $('#progressText').textContent = `${have} / ${total}${total ? ` · ${Math.round((have / total) * 100)}%` : ''}`;
   $('#progressBar').style.width = total ? `${(have / total) * 100}%` : '0';
@@ -502,11 +544,12 @@ function renderStats() {
 const SECTIONS = [
   { key: 'spm', title: "Marvel's Spider-Man", range: '#1–40' },
   { key: 'msh', title: 'Marvel Super Heroes', range: '#41–100' },
+  { key: 'classic', title: 'Classic Comic', range: 'MSH #387–401' },
 ];
 
 function sectionStats(key) {
   const all = cards.filter((c) => origin(c) === key);
-  const have = all.filter((c) => isOwned(c.num));
+  const have = all.filter((c) => isOwned(keyOf(c)));
   const value = have.reduce((s, c) => s + (priceOf(c) || 0), 0);
   return { total: all.length, have: have.length, value };
 }
@@ -543,12 +586,12 @@ function render() {
   }).join('');
 }
 
-function updateOne(num) {
-  const el = $(`.card[data-num="${CSS.escape(num)}"]`);
-  const c = cards.find((x) => String(x.num) === String(num));
+function updateOne(key) {
+  const el = $(`.card[data-key="${CSS.escape(key)}"]`);
+  const c = cards.find((x) => keyOf(x) === key);
   if (!el || !c) return render();
   // Si el filtro actual excluye la carta, se vuelve a pintar la lista completa
-  if ((filters.owned === 'owned' && !isOwned(num)) || (filters.owned === 'missing' && isOwned(num))) return render();
+  if ((filters.owned === 'owned' && !isOwned(key)) || (filters.owned === 'missing' && isOwned(key))) return render();
   el.outerHTML = cardHTML(c);
   renderStats();
   renderSectionStats();
