@@ -2,7 +2,7 @@
  "meta": {
   "set": "MAR",
   "source": "cardkingdom",
-  "updatedAt": "2026-11-15T17:04:51+00:00",
+  "updatedAt": "2026-11-16T20:25:21+00:00",
   "count": 115,
   "withCardKingdomPrice": 115
  },
@@ -144,7 +144,7 @@
    "imageLarge": "https://cards.scryfall.io/large/front/9/a/9a581f34-521c-4d28-96d4-be1e8dbc30b8.jpg?1783905390",
    "scryfallUrl": "https://scryfall.com/card/mar/7/wedding-ring?utm_source=api",
    "tcgPrice": 7.73,
-   "ckPrice": 8.49,
+   "ckPrice": 7.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/wedding-ring"
   },
   {
@@ -789,7 +789,7 @@
    "imageLarge": "https://cards.scryfall.io/large/front/5/a/5a2f6ccf-af93-4922-973d-6abfeb4d7cfc.jpg?1783905379",
    "scryfallUrl": "https://scryfall.com/card/mar/39/alibou-ancient-witness?utm_source=api",
    "tcgPrice": 3.01,
-   "ckPrice": 3.49,
+   "ckPrice": 2.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/alibou-ancient-witness-iron-spider-civil-warrior"
   },
   {
@@ -2001,7 +2001,7 @@
    "imageLarge": "https://cards.scryfall.io/large/front/6/d/6d3c06a5-a0b2-47a2-a583-d579c24a44c9.jpg?1783903305",
    "scryfallUrl": "https://scryfall.com/card/mar/99/roaming-throne?utm_source=api",
    "tcgPrice": 50.16,
-   "ckPrice": 64.99,
+   "ckPrice": 69.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-eternal-legal/roaming-throne-doom-variant"
   },
   {
@@ -2037,7 +2037,7 @@
    "image": "https://cards.scryfall.io/normal/front/7/f/7ffdca9d-3ee4-4572-b1ad-4f03523968fd.jpg?1783902840",
    "imageLarge": "https://cards.scryfall.io/large/front/7/f/7ffdca9d-3ee4-4572-b1ad-4f03523968fd.jpg?1783902840",
    "scryfallUrl": "https://scryfall.com/card/msh/387/captain-america-super-soldier?utm_source=api",
-   "tcgPrice": 51.22,
+   "tcgPrice": 50.83,
    "ckPrice": 49.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/captain-america-super-soldier-0387-borderless-foil"
   },
@@ -2057,7 +2057,7 @@
    "image": "https://cards.scryfall.io/normal/front/b/5/b51282a9-1132-4c93-a216-148d1e7bb007.jpg?1783902843",
    "imageLarge": "https://cards.scryfall.io/large/front/b/5/b51282a9-1132-4c93-a216-148d1e7bb007.jpg?1783902843",
    "scryfallUrl": "https://scryfall.com/card/msh/388/jennifer-walters-the-sensational-she-hulk?utm_source=api",
-   "tcgPrice": 40.25,
+   "tcgPrice": 40.48,
    "ckPrice": 49.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/jennifer-walters-0388-borderless-foil"
   },
@@ -2101,7 +2101,7 @@
    "image": "https://cards.scryfall.io/normal/front/4/8/481166c5-6a16-469c-91bd-abf291b5db49.jpg?1783902844",
    "imageLarge": "https://cards.scryfall.io/large/front/4/8/481166c5-6a16-469c-91bd-abf291b5db49.jpg?1783902844",
    "scryfallUrl": "https://scryfall.com/card/msh/390/bruce-banner-the-incredible-hulk?utm_source=api",
-   "tcgPrice": 41.54,
+   "tcgPrice": 41.77,
    "ckPrice": 54.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/bruce-banner-0390-borderless-foil"
   },
@@ -2120,7 +2120,7 @@
    "image": "https://cards.scryfall.io/normal/front/4/7/47016620-48c7-42b2-9bef-8e2f8fc0786e.jpg?1783902839",
    "imageLarge": "https://cards.scryfall.io/large/front/4/7/47016620-48c7-42b2-9bef-8e2f8fc0786e.jpg?1783902839",
    "scryfallUrl": "https://scryfall.com/card/msh/391/namor-the-sub-mariner?utm_source=api",
-   "tcgPrice": 37.81,
+   "tcgPrice": 38.25,
    "ckPrice": 39.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/namor-the-sub-mariner-0391-borderless-foil"
   },
@@ -2140,7 +2140,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/1/81eaf2ee-edeb-4026-81bb-8766ffa61f0d.jpg?1783902843",
    "imageLarge": "https://cards.scryfall.io/large/front/8/1/81eaf2ee-edeb-4026-81bb-8766ffa61f0d.jpg?1783902843",
    "scryfallUrl": "https://scryfall.com/card/msh/392/tony-stark-the-invincible-iron-man?utm_source=api",
-   "tcgPrice": 54.84,
+   "tcgPrice": 55.11,
    "ckPrice": 64.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/tony-stark-0392-borderless-foil"
   },
@@ -2159,7 +2159,7 @@
    "image": "https://cards.scryfall.io/normal/front/8/e/8e3c4b2a-4ef7-41ea-a4b5-b0cc942a9889.jpg?1783902838",
    "imageLarge": "https://cards.scryfall.io/large/front/8/e/8e3c4b2a-4ef7-41ea-a4b5-b0cc942a9889.jpg?1783902838",
    "scryfallUrl": "https://scryfall.com/card/msh/393/black-widow-super-spy?utm_source=api",
-   "tcgPrice": 23.4,
+   "tcgPrice": 23.36,
    "ckPrice": 24.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/black-widow-super-spy-0393-borderless-foil"
   },
@@ -2178,7 +2178,7 @@
    "image": "https://cards.scryfall.io/normal/front/0/6/06255e9e-5395-41ed-ad89-1e7b2b5478d3.jpg?1783902838",
    "imageLarge": "https://cards.scryfall.io/large/front/0/6/06255e9e-5395-41ed-ad89-1e7b2b5478d3.jpg?1783902838",
    "scryfallUrl": "https://scryfall.com/card/msh/394/doctor-doom?utm_source=api",
-   "tcgPrice": 166.6,
+   "tcgPrice": 165.86,
    "ckPrice": 159.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/doctor-doom-0394-borderless-foil"
   },
@@ -2216,7 +2216,7 @@
    "image": "https://cards.scryfall.io/normal/front/b/3/b367d034-ae08-4b08-b090-39a6d4f79dc2.jpg?1783902836",
    "imageLarge": "https://cards.scryfall.io/large/front/b/3/b367d034-ae08-4b08-b090-39a6d4f79dc2.jpg?1783902836",
    "scryfallUrl": "https://scryfall.com/card/msh/396/shang-chi-master-of-kung-fu?utm_source=api",
-   "tcgPrice": 72.16,
+   "tcgPrice": 72.12,
    "ckPrice": 89.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/shang-chi-master-of-kung-fu-0396-borderless-foil"
   },
@@ -2236,7 +2236,7 @@
    "image": "https://cards.scryfall.io/normal/front/1/5/15850911-bfeb-4e9e-aec9-34a22faac896.jpg?1783902837",
    "imageLarge": "https://cards.scryfall.io/large/front/1/5/15850911-bfeb-4e9e-aec9-34a22faac896.jpg?1783902837",
    "scryfallUrl": "https://scryfall.com/card/msh/397/the-astonishing-ant-man?utm_source=api",
-   "tcgPrice": 38.33,
+   "tcgPrice": 38.3,
    "ckPrice": 39.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/the-astonishing-ant-man-0397-borderless-foil"
   },
@@ -2276,7 +2276,7 @@
    "image": "https://cards.scryfall.io/normal/front/d/1/d1d8391c-dacc-4f21-a40e-5ca53a787f0d.jpg?1783902841",
    "imageLarge": "https://cards.scryfall.io/large/front/d/1/d1d8391c-dacc-4f21-a40e-5ca53a787f0d.jpg?1783902841",
    "scryfallUrl": "https://scryfall.com/card/msh/399/king-tchalla-black-panther-hope-enduring?utm_source=api",
-   "tcgPrice": 45.73,
+   "tcgPrice": 45.43,
    "ckPrice": 44.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/king-tchalla-0399-borderless-foil"
   },
@@ -2299,7 +2299,7 @@
    "image": "https://cards.scryfall.io/normal/front/c/2/c2cdcd6d-15ee-46be-b90e-b0f5d2c5de87.jpg?1783902835",
    "imageLarge": "https://cards.scryfall.io/large/front/c/2/c2cdcd6d-15ee-46be-b90e-b0f5d2c5de87.jpg?1783902835",
    "scryfallUrl": "https://scryfall.com/card/msh/400/thanos-the-mad-titan?utm_source=api",
-   "tcgPrice": 156.36,
+   "tcgPrice": 154.28,
    "ckPrice": 159.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/thanos-the-mad-titan-0400-borderless-foil"
   },
@@ -2316,7 +2316,7 @@
    "image": "https://cards.scryfall.io/normal/front/d/f/df9302a8-e918-429c-8853-133c489223f1.jpg?1783902834",
    "imageLarge": "https://cards.scryfall.io/large/front/d/f/df9302a8-e918-429c-8853-133c489223f1.jpg?1783902834",
    "scryfallUrl": "https://scryfall.com/card/msh/401/ultron-artificial-malevolence?utm_source=api",
-   "tcgPrice": 71.4,
+   "tcgPrice": 70.76,
    "ckPrice": 84.99,
    "ckUrl": "https://www.cardkingdom.com/mtg/marvel-super-heroes-variants/ultron-artificial-malevolence-0401-borderless-foil"
   }
